@@ -23,7 +23,7 @@ Log sources (EHR, IoT, auth, cloud, network)
         │
         ▼
 Ingestion pipeline
-  Wazuh agents → Kafka → Parser → Normalizer → Cleaner → Feature engineering → PostgreSQL
+  Wazuh agents → Kafka → Parser → Normalizer → Cleaner → Feature engineering → MongoDB
         │
         ▼
 ML anomaly detection service
@@ -57,7 +57,7 @@ Auth (JWT + RBAC), Redis (caching/session), Prometheus/Grafana (monitoring), and
 | Module | Responsibility | Key tech |
 |---|---|---|
 | Ingestion | Collect, parse, normalize, enrich raw logs | Wazuh, Kafka, Python |
-| Storage | Persist normalized events, scores, incidents | PostgreSQL |
+| Storage | Persist normalized events, scores, incidents | MongoDB |
 | ML detection | Score events for anomalousness | Scikit-learn, PyOD, XGBoost |
 | Orchestrator | Route incidents to specialist agents, manage agent state | LangGraph |
 | RAG layer | Chunk, embed, retrieve compliance/threat-intel docs | Sentence Transformers, ChromaDB |
@@ -71,7 +71,7 @@ Auth (JWT + RBAC), Redis (caching/session), Prometheus/Grafana (monitoring), and
 ## 5. Data flow narrative
 
 1. A log event (e.g. a failed EHR login) is generated at the source and shipped by a Wazuh agent.
-2. It lands in Kafka, gets picked up by the ingestion service, parsed into the common schema, cleaned, enriched, and written to PostgreSQL.
+2. It lands in Kafka, gets picked up by the ingestion service, parsed into the common schema, cleaned, enriched, and written to MongoDB.
 3. The ML service scores the event (and related events) for anomalousness, producing an anomaly score, risk score, confidence, and severity.
 4. If the score crosses threshold, the alert orchestrator creates an incident and dispatches it to four agents in parallel: MITRE mapping, compliance lookup, historical search, asset context.
 5. The report generator combines all four agent outputs into one incident report: what happened, root cause, MITRE technique, affected assets, risk level, HIPAA impact, and remediation steps — each claim traceable to a retrieved source.
@@ -94,7 +94,7 @@ department, action, severity, protocol, port, message, outcome
 | LLM | API Based | Faster development, better model quality, minimal infrastructure. |
 | Embeddings | Sentence Transformers | Free, local, no API cost for embedding the knowledge base |
 | Vector DB | ChromaDB | Lightweight, easy local dev, good LangChain integration |
-| Database | PostgreSQL | Relational integrity for logs/incidents/users; mature, well-understood |
+| Database | MongoDB | Relational integrity for logs/incidents/users; mature, well-understood |
 | Cache | Redis | Session storage, response caching |
 | Message queue | Kafka | Decouples ingestion from ML scoring; realistic production pattern |
 | Frontend | React + TypeScript + Tailwind | Type safety + fast iteration on dashboard UI |

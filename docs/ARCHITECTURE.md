@@ -91,7 +91,7 @@ department, action, severity, protocol, port, message, outcome
 | Backend | FastAPI | Async, fast, automatic OpenAPI docs |
 | ML | Scikit-learn, PyOD, XGBoost | Direct reuse of your AMPds/iBlend anomaly detection experience |
 | Orchestration (AI) | LangChain + LangGraph | LangGraph gives explicit, debuggable agent state graphs — better than an implicit chain for a multi-agent SOC copilot |
-| LLM | *(decide: API-based vs Ollama — see decision log)* | — |
+| LLM | API Based | Faster development, better model quality, minimal infrastructure. |
 | Embeddings | Sentence Transformers | Free, local, no API cost for embedding the knowledge base |
 | Vector DB | ChromaDB | Lightweight, easy local dev, good LangChain integration |
 | Database | PostgreSQL | Relational integrity for logs/incidents/users; mature, well-understood |

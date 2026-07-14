@@ -54,7 +54,7 @@ Full detail — module responsibilities, data flow narrative, non-functional req
 | ML | Scikit-learn, PyOD, XGBoost |
 | GenAI orchestration | LangChain, LangGraph |
 | Embeddings / Vector DB | Sentence Transformers, ChromaDB |
-| Database | PostgreSQL |
+| Database | MongoDB |
 | Cache | Redis |
 | Message queue | Apache Kafka |
 | Frontend | React, TypeScript, Tailwind CSS, Chart.js |
@@ -100,12 +100,10 @@ HAI-SOC/
 
 ## Getting started
 
-> Local dev setup will be filled in once Phase 10 (Dockerization) lands — target is a single `docker-compose up` bringing up the backend, frontend, PostgreSQL, Redis, Kafka, and ChromaDB.
+> Local dev setup will be filled in once Phase 10 (Dockerization) lands — target is a single `docker-compose up` bringing up the backend, frontend, MongoDB, Redis, Kafka, and ChromaDB.
 
 ## Data & compliance note
 
 This project uses simulated or public security-log datasets only — no real PHI is collected, stored, or processed at any stage.
 
-## License
 
-*(add a license — MIT is a reasonable default for a portfolio project)*

@@ -152,7 +152,7 @@ Record every non-trivial choice here as you make it — this becomes useful inte
 | Date | Decision | Options considered | Chosen | Reason |
 |---|---|---|---|---|
 | Wk1 D1 | Orchestration framework | LangChain chains vs LangGraph | LangGraph | Explicit agent graph is easier to debug and extend with new agents later |
-| Wk1 D2 | LLM backend | API-based (Claude/OpenAI-compatible) | Faster development | better model quality | minimal infrastructure |
+| Wk1 D2 | LLM backend | API-based (Claude/OpenAI-compatible) | LLMs |Faster development,better model quality | minimal infrastructure |
 | Wk1 D2 | Vector DB | ChromaDB vs FAISS vs pgvector | ChromaDB | Simplest local dev experience, native LangChain support |
 | Wk1 D3 | Message queue | Kafka vs simple queue/cron | Kafka | Realistic production pattern; decouples ingestion from scoring |
 

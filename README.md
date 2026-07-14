@@ -26,7 +26,7 @@ Traditional SIEM tools lean on rule-based detection — high false-positive rate
 Log sources (EHR, IoT, auth, cloud, network)
         │
         ▼
-Ingestion pipeline (Wazuh → Kafka → parse/normalize/clean/feature-engineer → PostgreSQL)
+Ingestion pipeline (Wazuh → Kafka → parse/normalize/clean/feature-engineer → MongoDB)
         │
         ▼
 ML anomaly detection (Isolation Forest / LOF / Autoencoder → score, risk, confidence, severity)

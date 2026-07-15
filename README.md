@@ -33,7 +33,7 @@ ML anomaly detection (Isolation Forest / LOF / Autoencoder → score, risk, conf
         │
         ▼
 Alert orchestrator (LangGraph) ── fans out to ──┬── MITRE ATT&CK mapping
-                                                  ├── Compliance retrieval (RAG / ChromaDB)
+                                                  ├── Compliance retrieval (RAG / Qdrant)
                                                   ├── Historical incident search
                                                   └── Asset context
         │
@@ -53,7 +53,7 @@ Full detail — module responsibilities, data flow narrative, non-functional req
 | Backend | Python, FastAPI |
 | ML | Scikit-learn, PyOD, XGBoost |
 | GenAI orchestration | LangChain, LangGraph |
-| Embeddings / Vector DB | Sentence Transformers, ChromaDB |
+| Embeddings / Vector DB | Sentence Transformers, Qdrant |
 | Database | MongoDB |
 | Cache | Redis |
 | Message queue | Apache Kafka |

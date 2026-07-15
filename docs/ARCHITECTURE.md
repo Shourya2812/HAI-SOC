@@ -33,7 +33,7 @@ ML anomaly detection service
 Alert orchestrator (LangGraph)
   routes each incident to specialist agents, runs them in parallel:
         ├── MITRE ATT&CK mapping agent
-        ├── Compliance retrieval agent      (HIPAA / NIST — RAG over ChromaDB)
+        ├── Compliance retrieval agent      (HIPAA / NIST — RAG over Qdrant)
         ├── Historical incident search agent
         └── Asset context agent
         │

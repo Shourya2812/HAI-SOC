@@ -1,10 +1,16 @@
 from datetime import datetime
 from typing import Optional, Dict, Any
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, ConfigDict
+
+from app.models.enums import Severity, Outcome, UserRole
 
 
 class Log(BaseModel):
+    """
+    Common schema for healthcare security events.
+    """
+
     timestamp: datetime
 
     source: str
@@ -13,7 +19,7 @@ class Log(BaseModel):
 
     user_id: Optional[str] = None
 
-    role: Optional[str] = None
+    role: Optional[UserRole] = None
 
     device: Optional[str] = None
 
@@ -21,7 +27,7 @@ class Log(BaseModel):
 
     action: str
 
-    severity: str
+    severity: Severity
 
     protocol: Optional[str] = None
 
@@ -29,6 +35,10 @@ class Log(BaseModel):
 
     message: str
 
-    outcome: str
+    outcome: Outcome
 
     extra: Dict[str, Any] = Field(default_factory=dict)
+
+    model_config = ConfigDict(
+        extra="forbid"
+    )

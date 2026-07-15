@@ -21,7 +21,14 @@ class IncidentStatus(str, Enum):
 
 class UserRole(str, Enum):
     ADMIN = "ADMIN"
-    ANALYST = "ANALYST"
+    SOC_ANALYST = "SOC_ANALYST"
     DOCTOR = "DOCTOR"
     NURSE = "NURSE"
     SYSTEM = "SYSTEM"
+
+
+class RiskLevel(str, Enum):
+    LOW = "LOW"
+    MEDIUM = "MEDIUM"
+    HIGH = "HIGH"
+    CRITICAL = "CRITICAL"

@@ -60,8 +60,8 @@ Auth (JWT + RBAC), Redis (caching/session), Prometheus/Grafana (monitoring), and
 | Storage | Persist normalized events, scores, incidents | MongoDB |
 | ML detection | Score events for anomalousness | Scikit-learn, PyOD, XGBoost |
 | Orchestrator | Route incidents to specialist agents, manage agent state | LangGraph |
-| RAG layer | Chunk, embed, retrieve compliance/threat-intel docs | Sentence Transformers, ChromaDB |
-| GenAI copilot | Generate grounded incident reports | LangChain + LLM (API or Ollama) |
+| RAG layer | Chunk, embed, retrieve compliance/threat-intel docs | Sentence Transformers, Qdrant |
+| GenAI copilot | Generate grounded incident reports | LangChain + LLM (API) |
 | Backend API | Expose all functionality over REST | FastAPI |
 | Frontend | SOC analyst-facing UI | React, TypeScript, Tailwind, Chart.js |
 | Auth | Authentication + role-based access | JWT, FastAPI middleware |
@@ -93,7 +93,7 @@ department, action, severity, protocol, port, message, outcome
 | Orchestration (AI) | LangChain + LangGraph | LangGraph gives explicit, debuggable agent state graphs — better than an implicit chain for a multi-agent SOC copilot |
 | LLM | API Based | Faster development, better model quality, minimal infrastructure. |
 | Embeddings | Sentence Transformers | Free, local, no API cost for embedding the knowledge base |
-| Vector DB | ChromaDB | Lightweight, easy local dev, good LangChain integration |
+| Vector DB | Qdrant | Production-ready vector search with excellent LangChain integration |
 | Database | MongoDB | Relational integrity for logs/incidents/users; mature, well-understood |
 | Cache | Redis | Session storage, response caching |
 | Message queue | Kafka | Decouples ingestion from ML scoring; realistic production pattern |
@@ -153,7 +153,7 @@ Record every non-trivial choice here as you make it — this becomes useful inte
 |---|---|---|---|---|
 | Wk1 D1 | Orchestration framework | LangChain chains vs LangGraph | LangGraph | Explicit agent graph is easier to debug and extend with new agents later |
 | Wk1 D2 | LLM backend | API-based (Claude/OpenAI-compatible) | LLMs |Faster development,better model quality | minimal infrastructure |
-| Wk1 D2 | Vector DB | ChromaDB vs FAISS vs pgvector | ChromaDB | Simplest local dev experience, native LangChain support |
+| Wk1 D2 | Vector DB | Qdrant vs FAISS vs pgvector | Qdrant | Simplest local dev experience, native LangChain support |
 | Wk1 D3 | Message queue | Kafka vs simple queue/cron | Kafka | Realistic production pattern; decouples ingestion from scoring |
 
 ## 11. Milestone checklist (Phases 1–15)

@@ -100,7 +100,7 @@ HAI-SOC/
 
 ## Getting started
 
-> Local dev setup will be filled in once Phase 10 (Dockerization) lands — target is a single `docker-compose up` bringing up the backend, frontend, MongoDB, Redis, Kafka, and ChromaDB.
+> Local dev setup will be filled in once Phase 10 (Dockerization) lands — target is a single `docker-compose up` bringing up the backend, frontend, MongoDB, Redis, Kafka, and Qdrant.
 
 ## Data & compliance note
 

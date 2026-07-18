@@ -13,13 +13,21 @@ from app.schemas.incident_schema import (
 
 from app.services.incident_service import IncidentService
 
+from fastapi import Depends
+
+from app.api.dependencies import require_role
+from app.models.enums import UserRole
+
 router = APIRouter(
     prefix="/incidents",
     tags=["Incidents"],
 )
 
 
-@router.post("/")
+@router.post(
+    "/",
+    dependencies=[Depends(require_role(UserRole.SOC_ANALYST))]
+)
 def create_incident(request: CreateIncidentRequest):
     return IncidentService.create_incident(request)
 
@@ -65,7 +73,10 @@ def update_incident(
     return incident
 
 
-@router.delete("/{incident_id}")
+@router.delete(
+    "/{incident_id}",
+    dependencies=[Depends(require_role(UserRole.ADMIN))]
+)
 def delete_incident(
     incident_id: str,
 ):

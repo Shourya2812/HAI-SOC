@@ -7,6 +7,7 @@ Authentication service for HAI-SOC.
 from datetime import datetime, UTC
 
 from app.database.collections import users_collection
+from app.schemas.auth_schema import RegisterResponse
 from app.models.user import User
 from app.schemas.user_schema import CreateUserRequest
 from app.schemas.auth_schema import LoginRequest, TokenResponse
@@ -42,9 +43,9 @@ class AuthService:
             user.model_dump()
         )
 
-        return {
-            "message": "User registered successfully."
-        }
+        return RegisterResponse(
+            message="User registered successfully."
+        )
 
     @staticmethod
     def login(

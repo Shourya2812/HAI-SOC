@@ -11,23 +11,9 @@ from app.models.enums import IncidentStatus, RiskLevel
 
 
 class CreateIncidentRequest(BaseModel):
-    """
-    Request schema for creating a new security incident.
-    """
-
     title: str
-
-    log_ids: List[str]
-
+    description: str
     risk_level: RiskLevel
-
-    hipaa_impact: str
-
-    mitre_technique_id: str
-
-    report: Dict[str, Any] = Field(default_factory=dict)
-
-    model_config = ConfigDict(extra="forbid")
 
 
 class UpdateIncidentRequest(BaseModel):

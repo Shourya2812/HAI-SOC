@@ -13,6 +13,11 @@ from app.schemas.log_schema import (
 
 from app.services.log_service import LogService
 
+from fastapi import Depends
+
+from app.api.dependencies import require_role
+from app.models.enums import UserRole
+
 router = APIRouter(
     prefix="/logs",
     tags=["Logs"],
@@ -43,7 +48,10 @@ def get_log(log_id: str):
     return log
 
 
-@router.patch("/{log_id}")
+@router.patch(
+    "/{log_id}",
+    dependencies=[Depends(require_role(UserRole.SOC_ANALYST))]
+)
 def update_log(
     log_id: str,
     request: UpdateLogRequest,
@@ -63,8 +71,13 @@ def update_log(
     return log
 
 
-@router.delete("/{log_id}")
-def delete_log(log_id: str):
+@router.delete(
+    "/{log_id}",
+    dependencies=[Depends(require_role(UserRole.ADMIN))]
+)
+def delete_log(
+    log_id: str,
+):
 
     deleted = LogService.delete_log(log_id)
 

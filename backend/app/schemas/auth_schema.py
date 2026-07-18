@@ -1,39 +1,25 @@
-"""
-backend/app/schemas/auth_schema.py
+from datetime import datetime
 
-Schemas used by authentication endpoints.
-"""
-
-from pydantic import BaseModel, EmailStr, ConfigDict
+from pydantic import BaseModel, EmailStr
 
 
 class LoginRequest(BaseModel):
-    """
-    User login request.
-    """
-
     email: EmailStr
-
     password: str
-
-    model_config = ConfigDict(extra="forbid")
 
 
 class TokenResponse(BaseModel):
-    """
-    JWT token returned after successful login.
-    """
-
     access_token: str
-
     token_type: str = "bearer"
 
 
-class RefreshTokenRequest(BaseModel):
-    """
-    Refresh token request.
-    """
+class RegisterResponse(BaseModel):
+    message: str
 
-    refresh_token: str
 
-    model_config = ConfigDict(extra="forbid")
+class CurrentUserResponse(BaseModel):
+    id: str
+    email: EmailStr
+    role: str
+    created_at: datetime
+    last_login: datetime | None = None

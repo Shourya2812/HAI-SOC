@@ -7,10 +7,14 @@ Authentication routes for HAI-SOC.
 from fastapi import APIRouter, HTTPException, Depends
 
 from app.api.dependencies import get_current_user
-from app.schemas.auth_schema import TokenResponse
 from app.schemas.user_schema import CreateUserRequest
 from app.services.auth_service import AuthService
 from fastapi.security import OAuth2PasswordRequestForm
+from app.schemas.auth_schema import (
+    RegisterResponse,
+    TokenResponse,
+    CurrentUserResponse,
+)
 
 router = APIRouter(
     prefix="/auth",
@@ -20,6 +24,7 @@ router = APIRouter(
 
 @router.post(
     "/register",
+    response_model=RegisterResponse,
     status_code=201,
 )
 def register(
@@ -59,7 +64,10 @@ def login(
         )
 
 
-@router.get("/me")
+@router.get(
+    "/me",
+    response_model=CurrentUserResponse,
+)
 def get_me(
     current_user=Depends(get_current_user),
 ):

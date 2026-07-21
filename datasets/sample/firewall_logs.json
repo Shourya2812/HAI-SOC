@@ -1,0 +1,322 @@
+[
+    {
+        "timestamp": "2026-07-17T09:43:38",
+        "source": "FIREWALL",
+        "event_type": "BLOCKED_PORT_SCAN",
+        "source_ip": "10.24.99.238",
+        "destination_ip": "10.151.66.33",
+        "destination_port": 5432,
+        "protocol": "TCP",
+        "severity": "HIGH",
+        "status": "BLOCKED",
+        "description": "Port scan blocked by firewall.",
+        "extra": {
+            "rule_id": "FW-301",
+            "bytes_sent": 41846
+        }
+    },
+    {
+        "timestamp": "2026-07-21T11:12:58",
+        "source": "FIREWALL",
+        "event_type": "ALLOW",
+        "source_ip": "10.80.119.18",
+        "destination_ip": "10.188.43.81",
+        "destination_port": 80,
+        "protocol": "UDP",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "Network traffic allowed by firewall.",
+        "extra": {
+            "rule_id": "FW-201",
+            "bytes_sent": 12998
+        }
+    },
+    {
+        "timestamp": "2026-07-21T16:29:30",
+        "source": "FIREWALL",
+        "event_type": "BLOCKED_IP",
+        "source_ip": "10.156.141.181",
+        "destination_ip": "10.120.206.20",
+        "destination_port": 5432,
+        "protocol": "UDP",
+        "severity": "HIGH",
+        "status": "BLOCKED",
+        "description": "Traffic blocked from blacklisted IP.",
+        "extra": {
+            "rule_id": "FW-301",
+            "bytes_sent": 39640
+        }
+    },
+    {
+        "timestamp": "2026-07-20T17:19:25",
+        "source": "FIREWALL",
+        "event_type": "BLOCKED_PORT_SCAN",
+        "source_ip": "10.220.41.37",
+        "destination_ip": "10.167.61.185",
+        "destination_port": 8080,
+        "protocol": "UDP",
+        "severity": "HIGH",
+        "status": "BLOCKED",
+        "description": "Port scan blocked by firewall.",
+        "extra": {
+            "rule_id": "FW-101",
+            "bytes_sent": 15295
+        }
+    },
+    {
+        "timestamp": "2026-07-18T10:00:07",
+        "source": "FIREWALL",
+        "event_type": "ALLOW",
+        "source_ip": "10.172.252.191",
+        "destination_ip": "10.74.115.82",
+        "destination_port": 5432,
+        "protocol": "TCP",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "Network traffic allowed by firewall.",
+        "extra": {
+            "rule_id": "FW-201",
+            "bytes_sent": 16850
+        }
+    },
+    {
+        "timestamp": "2026-07-22T12:49:07",
+        "source": "FIREWALL",
+        "event_type": "BLOCKED_PORT_SCAN",
+        "source_ip": "10.20.240.174",
+        "destination_ip": "10.48.138.76",
+        "destination_port": 3306,
+        "protocol": "TCP",
+        "severity": "HIGH",
+        "status": "BLOCKED",
+        "description": "Port scan blocked by firewall.",
+        "extra": {
+            "rule_id": "FW-201",
+            "bytes_sent": 1989
+        }
+    },
+    {
+        "timestamp": "2026-07-19T10:52:15",
+        "source": "FIREWALL",
+        "event_type": "ALLOW",
+        "source_ip": "10.222.204.100",
+        "destination_ip": "10.146.52.137",
+        "destination_port": 53,
+        "protocol": "TCP",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "Network traffic allowed by firewall.",
+        "extra": {
+            "rule_id": "FW-201",
+            "bytes_sent": 12925
+        }
+    },
+    {
+        "timestamp": "2026-07-22T13:43:28",
+        "source": "FIREWALL",
+        "event_type": "BLOCKED_IP",
+        "source_ip": "10.240.13.107",
+        "destination_ip": "10.238.152.74",
+        "destination_port": 53,
+        "protocol": "UDP",
+        "severity": "HIGH",
+        "status": "BLOCKED",
+        "description": "Traffic blocked from blacklisted IP.",
+        "extra": {
+            "rule_id": "FW-301",
+            "bytes_sent": 46144
+        }
+    },
+    {
+        "timestamp": "2026-07-21T11:40:22",
+        "source": "FIREWALL",
+        "event_type": "ALLOW",
+        "source_ip": "10.209.82.69",
+        "destination_ip": "10.42.96.178",
+        "destination_port": 22,
+        "protocol": "TCP",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "Network traffic allowed by firewall.",
+        "extra": {
+            "rule_id": "FW-201",
+            "bytes_sent": 46588
+        }
+    },
+    {
+        "timestamp": "2026-07-17T17:17:16",
+        "source": "FIREWALL",
+        "event_type": "DENY",
+        "source_ip": "10.50.145.149",
+        "destination_ip": "10.106.137.192",
+        "destination_port": 5432,
+        "protocol": "TCP",
+        "severity": "MEDIUM",
+        "status": "BLOCKED",
+        "description": "Network traffic denied by firewall.",
+        "extra": {
+            "rule_id": "FW-102",
+            "bytes_sent": 22191
+        }
+    },
+    {
+        "timestamp": "2026-07-20T11:00:28",
+        "source": "FIREWALL",
+        "event_type": "DENY",
+        "source_ip": "10.18.219.177",
+        "destination_ip": "10.217.70.214",
+        "destination_port": 3306,
+        "protocol": "TCP",
+        "severity": "MEDIUM",
+        "status": "BLOCKED",
+        "description": "Network traffic denied by firewall.",
+        "extra": {
+            "rule_id": "FW-301",
+            "bytes_sent": 48226
+        }
+    },
+    {
+        "timestamp": "2026-07-21T10:15:50",
+        "source": "FIREWALL",
+        "event_type": "BLOCKED_IP",
+        "source_ip": "10.205.113.188",
+        "destination_ip": "10.23.78.73",
+        "destination_port": 8080,
+        "protocol": "UDP",
+        "severity": "HIGH",
+        "status": "BLOCKED",
+        "description": "Traffic blocked from blacklisted IP.",
+        "extra": {
+            "rule_id": "FW-301",
+            "bytes_sent": 8812
+        }
+    },
+    {
+        "timestamp": "2026-07-17T10:27:34",
+        "source": "FIREWALL",
+        "event_type": "ALLOW",
+        "source_ip": "10.68.149.44",
+        "destination_ip": "10.46.118.73",
+        "destination_port": 22,
+        "protocol": "TCP",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "Network traffic allowed by firewall.",
+        "extra": {
+            "rule_id": "FW-102",
+            "bytes_sent": 4917
+        }
+    },
+    {
+        "timestamp": "2026-07-20T13:22:16",
+        "source": "FIREWALL",
+        "event_type": "ALLOW",
+        "source_ip": "10.185.231.150",
+        "destination_ip": "10.199.158.233",
+        "destination_port": 3306,
+        "protocol": "UDP",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "Network traffic allowed by firewall.",
+        "extra": {
+            "rule_id": "FW-102",
+            "bytes_sent": 32041
+        }
+    },
+    {
+        "timestamp": "2026-07-16T17:55:30",
+        "source": "FIREWALL",
+        "event_type": "ALLOW",
+        "source_ip": "10.114.250.58",
+        "destination_ip": "10.144.247.136",
+        "destination_port": 3306,
+        "protocol": "TCP",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "Network traffic allowed by firewall.",
+        "extra": {
+            "rule_id": "FW-102",
+            "bytes_sent": 16226
+        }
+    },
+    {
+        "timestamp": "2026-07-21T17:06:17",
+        "source": "FIREWALL",
+        "event_type": "ALLOW",
+        "source_ip": "10.64.85.1",
+        "destination_ip": "10.152.168.206",
+        "destination_port": 80,
+        "protocol": "TCP",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "Network traffic allowed by firewall.",
+        "extra": {
+            "rule_id": "FW-301",
+            "bytes_sent": 7383
+        }
+    },
+    {
+        "timestamp": "2026-07-22T12:29:56",
+        "source": "FIREWALL",
+        "event_type": "DENY",
+        "source_ip": "10.22.122.121",
+        "destination_ip": "10.167.209.85",
+        "destination_port": 443,
+        "protocol": "TCP",
+        "severity": "MEDIUM",
+        "status": "BLOCKED",
+        "description": "Network traffic denied by firewall.",
+        "extra": {
+            "rule_id": "FW-101",
+            "bytes_sent": 3089
+        }
+    },
+    {
+        "timestamp": "2026-07-22T14:30:47",
+        "source": "FIREWALL",
+        "event_type": "BLOCKED_PORT_SCAN",
+        "source_ip": "10.68.95.206",
+        "destination_ip": "10.68.116.212",
+        "destination_port": 5432,
+        "protocol": "TCP",
+        "severity": "HIGH",
+        "status": "BLOCKED",
+        "description": "Port scan blocked by firewall.",
+        "extra": {
+            "rule_id": "FW-201",
+            "bytes_sent": 48185
+        }
+    },
+    {
+        "timestamp": "2026-07-21T15:12:19",
+        "source": "FIREWALL",
+        "event_type": "BLOCKED_PORT_SCAN",
+        "source_ip": "10.255.147.250",
+        "destination_ip": "10.187.152.109",
+        "destination_port": 5432,
+        "protocol": "TCP",
+        "severity": "HIGH",
+        "status": "BLOCKED",
+        "description": "Port scan blocked by firewall.",
+        "extra": {
+            "rule_id": "FW-102",
+            "bytes_sent": 11372
+        }
+    },
+    {
+        "timestamp": "2026-07-22T09:16:30",
+        "source": "FIREWALL",
+        "event_type": "BLOCKED_IP",
+        "source_ip": "10.215.198.38",
+        "destination_ip": "10.212.44.87",
+        "destination_port": 8080,
+        "protocol": "TCP",
+        "severity": "HIGH",
+        "status": "BLOCKED",
+        "description": "Traffic blocked from blacklisted IP.",
+        "extra": {
+            "rule_id": "FW-101",
+            "bytes_sent": 24827
+        }
+    }
+]

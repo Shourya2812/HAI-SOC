@@ -1,0 +1,2288 @@
+[
+    {
+        "timestamp": "2026-07-20T02:49:16",
+        "source": "EHR",
+        "event_type": "LOGIN",
+        "user": "nurse_johnson",
+        "user_role": "NURSE",
+        "department": "Pediatrics",
+        "asset": "Firewall",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.186.158.184",
+        "destination_ip": "10.0.0.10",
+        "description": "User logged into the EHR system.",
+        "extra": {
+            "patient_id": "P1301",
+            "session_id": "b1ed0636-77c3-4329-82ab-ccbef3101dfd"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T02:52:16",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "nurse_johnson",
+        "user_role": "NURSE",
+        "department": "Pediatrics",
+        "asset": "Firewall",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.18.22.80",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P7743",
+            "session_id": "b1ed0636-77c3-4329-82ab-ccbef3101dfd"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T02:51:16",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "nurse_johnson",
+        "user_role": "NURSE",
+        "department": "Pediatrics",
+        "asset": "Firewall",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.242.122.162",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P9866",
+            "session_id": "b1ed0636-77c3-4329-82ab-ccbef3101dfd"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T02:52:16",
+        "source": "EHR",
+        "event_type": "LOGOUT",
+        "user": "nurse_johnson",
+        "user_role": "NURSE",
+        "department": "Pediatrics",
+        "asset": "Firewall",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.154.143.109",
+        "destination_ip": "10.0.0.10",
+        "description": "User logged out of the EHR system.",
+        "extra": {
+            "patient_id": "P2528",
+            "session_id": "b1ed0636-77c3-4329-82ab-ccbef3101dfd"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T09:03:05",
+        "source": "EHR",
+        "event_type": "LOGIN",
+        "user": "dr_jones",
+        "user_role": "DOCTOR",
+        "department": "Neurology",
+        "asset": "VPN Gateway",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.142.112.136",
+        "destination_ip": "10.0.0.10",
+        "description": "User logged into the EHR system.",
+        "extra": {
+            "patient_id": "P9274",
+            "session_id": "b3d49046-c41a-4f6e-9ec7-c7d2172cbba0"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T09:04:05",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "dr_jones",
+        "user_role": "DOCTOR",
+        "department": "Neurology",
+        "asset": "VPN Gateway",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.139.26.44",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P4327",
+            "session_id": "b3d49046-c41a-4f6e-9ec7-c7d2172cbba0"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T09:09:05",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "dr_jones",
+        "user_role": "DOCTOR",
+        "department": "Neurology",
+        "asset": "VPN Gateway",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.214.190.250",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P3696",
+            "session_id": "b3d49046-c41a-4f6e-9ec7-c7d2172cbba0"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T09:06:05",
+        "source": "EHR",
+        "event_type": "PRINT_RECORD",
+        "user": "dr_jones",
+        "user_role": "DOCTOR",
+        "department": "Neurology",
+        "asset": "VPN Gateway",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.18.172.67",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record printed.",
+        "extra": {
+            "patient_id": "P6634",
+            "session_id": "b3d49046-c41a-4f6e-9ec7-c7d2172cbba0"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T09:07:05",
+        "source": "EHR",
+        "event_type": "LOGOUT",
+        "user": "dr_jones",
+        "user_role": "DOCTOR",
+        "department": "Neurology",
+        "asset": "VPN Gateway",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.143.0.141",
+        "destination_ip": "10.0.0.10",
+        "description": "User logged out of the EHR system.",
+        "extra": {
+            "patient_id": "P4413",
+            "session_id": "b3d49046-c41a-4f6e-9ec7-c7d2172cbba0"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T15:13:10",
+        "source": "EHR",
+        "event_type": "LOGIN",
+        "user": "dr_clark",
+        "user_role": "DOCTOR",
+        "department": "Oncology",
+        "asset": "Patient Database",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.115.117.101",
+        "destination_ip": "10.0.0.10",
+        "description": "User logged into the EHR system.",
+        "extra": {
+            "patient_id": "P5576",
+            "session_id": "214e7843-72c5-443e-94f1-88b4d4b30162"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T15:14:10",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "dr_clark",
+        "user_role": "DOCTOR",
+        "department": "Oncology",
+        "asset": "Patient Database",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.22.203.79",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P4576",
+            "session_id": "214e7843-72c5-443e-94f1-88b4d4b30162"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T15:15:10",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "dr_clark",
+        "user_role": "DOCTOR",
+        "department": "Oncology",
+        "asset": "Patient Database",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.74.96.43",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P7110",
+            "session_id": "214e7843-72c5-443e-94f1-88b4d4b30162"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T15:22:10",
+        "source": "EHR",
+        "event_type": "UPDATE_RECORD",
+        "user": "dr_clark",
+        "user_role": "DOCTOR",
+        "department": "Oncology",
+        "asset": "Patient Database",
+        "severity": "MEDIUM",
+        "status": "SUCCESS",
+        "source_ip": "10.88.188.14",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record updated.",
+        "extra": {
+            "patient_id": "P4393",
+            "session_id": "214e7843-72c5-443e-94f1-88b4d4b30162"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T15:25:10",
+        "source": "EHR",
+        "event_type": "LOGOUT",
+        "user": "dr_clark",
+        "user_role": "DOCTOR",
+        "department": "Oncology",
+        "asset": "Patient Database",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.128.159.98",
+        "destination_ip": "10.0.0.10",
+        "description": "User logged out of the EHR system.",
+        "extra": {
+            "patient_id": "P1201",
+            "session_id": "214e7843-72c5-443e-94f1-88b4d4b30162"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T04:11:19",
+        "source": "EHR",
+        "event_type": "LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "asset": "IDS Sensor",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.164.93.12",
+        "destination_ip": "10.0.0.10",
+        "description": "User logged into the EHR system.",
+        "extra": {
+            "patient_id": "P7783",
+            "session_id": "1c6dcaff-45cf-4be4-8cd5-11516dea6e7d"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T04:12:19",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "asset": "IDS Sensor",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.219.175.9",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P1456",
+            "session_id": "1c6dcaff-45cf-4be4-8cd5-11516dea6e7d"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T04:17:19",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "asset": "IDS Sensor",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.145.49.7",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P8173",
+            "session_id": "1c6dcaff-45cf-4be4-8cd5-11516dea6e7d"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T04:20:19",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "asset": "IDS Sensor",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.25.181.68",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P5972",
+            "session_id": "1c6dcaff-45cf-4be4-8cd5-11516dea6e7d"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T04:23:19",
+        "source": "EHR",
+        "event_type": "UPDATE_RECORD",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "asset": "IDS Sensor",
+        "severity": "MEDIUM",
+        "status": "SUCCESS",
+        "source_ip": "10.131.43.182",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record updated.",
+        "extra": {
+            "patient_id": "P1295",
+            "session_id": "1c6dcaff-45cf-4be4-8cd5-11516dea6e7d"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T04:26:19",
+        "source": "EHR",
+        "event_type": "LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "asset": "IDS Sensor",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.63.178.179",
+        "destination_ip": "10.0.0.10",
+        "description": "User logged out of the EHR system.",
+        "extra": {
+            "patient_id": "P5605",
+            "session_id": "1c6dcaff-45cf-4be4-8cd5-11516dea6e7d"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T15:16:43",
+        "source": "EHR",
+        "event_type": "LOGIN",
+        "user": "radio_lee",
+        "user_role": "RADIOLOGIST",
+        "department": "Radiology",
+        "asset": "Laboratory Information System",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.50.222.218",
+        "destination_ip": "10.0.0.10",
+        "description": "User logged into the EHR system.",
+        "extra": {
+            "patient_id": "P7139",
+            "session_id": "5661f81d-637c-4cef-84bf-c4f55ac44839"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T15:18:43",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "radio_lee",
+        "user_role": "RADIOLOGIST",
+        "department": "Radiology",
+        "asset": "Laboratory Information System",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.255.58.47",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P5630",
+            "session_id": "5661f81d-637c-4cef-84bf-c4f55ac44839"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T15:20:43",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "radio_lee",
+        "user_role": "RADIOLOGIST",
+        "department": "Radiology",
+        "asset": "Laboratory Information System",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.151.51.178",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P7469",
+            "session_id": "5661f81d-637c-4cef-84bf-c4f55ac44839"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T15:22:43",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "radio_lee",
+        "user_role": "RADIOLOGIST",
+        "department": "Radiology",
+        "asset": "Laboratory Information System",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.223.211.125",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P9041",
+            "session_id": "5661f81d-637c-4cef-84bf-c4f55ac44839"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T15:24:43",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "radio_lee",
+        "user_role": "RADIOLOGIST",
+        "department": "Radiology",
+        "asset": "Laboratory Information System",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.103.84.172",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P8988",
+            "session_id": "5661f81d-637c-4cef-84bf-c4f55ac44839"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T15:26:43",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "radio_lee",
+        "user_role": "RADIOLOGIST",
+        "department": "Radiology",
+        "asset": "Laboratory Information System",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.158.196.180",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P8887",
+            "session_id": "5661f81d-637c-4cef-84bf-c4f55ac44839"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T15:28:43",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "radio_lee",
+        "user_role": "RADIOLOGIST",
+        "department": "Radiology",
+        "asset": "Laboratory Information System",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.78.90.136",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P8409",
+            "session_id": "5661f81d-637c-4cef-84bf-c4f55ac44839"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T15:37:43",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "radio_lee",
+        "user_role": "RADIOLOGIST",
+        "department": "Radiology",
+        "asset": "Laboratory Information System",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.176.252.149",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P4732",
+            "session_id": "5661f81d-637c-4cef-84bf-c4f55ac44839"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T15:32:43",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "radio_lee",
+        "user_role": "RADIOLOGIST",
+        "department": "Radiology",
+        "asset": "Laboratory Information System",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.107.204.43",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P9601",
+            "session_id": "5661f81d-637c-4cef-84bf-c4f55ac44839"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T15:34:43",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "radio_lee",
+        "user_role": "RADIOLOGIST",
+        "department": "Radiology",
+        "asset": "Laboratory Information System",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.254.154.200",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P5770",
+            "session_id": "5661f81d-637c-4cef-84bf-c4f55ac44839"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T15:36:43",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "radio_lee",
+        "user_role": "RADIOLOGIST",
+        "department": "Radiology",
+        "asset": "Laboratory Information System",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.230.128.224",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P6465",
+            "session_id": "5661f81d-637c-4cef-84bf-c4f55ac44839"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T15:38:43",
+        "source": "EHR",
+        "event_type": "PRINT_RECORD",
+        "user": "radio_lee",
+        "user_role": "RADIOLOGIST",
+        "department": "Radiology",
+        "asset": "Laboratory Information System",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.186.35.46",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record printed.",
+        "extra": {
+            "patient_id": "P7620",
+            "session_id": "5661f81d-637c-4cef-84bf-c4f55ac44839"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T15:40:43",
+        "source": "EHR",
+        "event_type": "LOGOUT",
+        "user": "radio_lee",
+        "user_role": "RADIOLOGIST",
+        "department": "Radiology",
+        "asset": "Laboratory Information System",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.171.81.166",
+        "destination_ip": "10.0.0.10",
+        "description": "User logged out of the EHR system.",
+        "extra": {
+            "patient_id": "P6607",
+            "session_id": "5661f81d-637c-4cef-84bf-c4f55ac44839"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T14:08:27",
+        "source": "EHR",
+        "event_type": "LOGIN",
+        "user": "admin_green",
+        "user_role": "ADMIN",
+        "department": "Administration",
+        "asset": "Patient Database",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.250.199.194",
+        "destination_ip": "10.0.0.10",
+        "description": "User logged into the EHR system.",
+        "extra": {
+            "patient_id": "P7371",
+            "session_id": "15e81c93-e349-4048-a10a-dc062d602d94"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T14:11:27",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "admin_green",
+        "user_role": "ADMIN",
+        "department": "Administration",
+        "asset": "Patient Database",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.91.229.93",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P1455",
+            "session_id": "15e81c93-e349-4048-a10a-dc062d602d94"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T14:14:27",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "admin_green",
+        "user_role": "ADMIN",
+        "department": "Administration",
+        "asset": "Patient Database",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.21.2.205",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P1825",
+            "session_id": "15e81c93-e349-4048-a10a-dc062d602d94"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T14:17:27",
+        "source": "EHR",
+        "event_type": "LOGOUT",
+        "user": "admin_green",
+        "user_role": "ADMIN",
+        "department": "Administration",
+        "asset": "Patient Database",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.168.45.249",
+        "destination_ip": "10.0.0.10",
+        "description": "User logged out of the EHR system.",
+        "extra": {
+            "patient_id": "P6630",
+            "session_id": "15e81c93-e349-4048-a10a-dc062d602d94"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T02:55:18",
+        "source": "EHR",
+        "event_type": "LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "asset": "Backup Server",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.233.37.45",
+        "destination_ip": "10.0.0.10",
+        "description": "User logged into the EHR system.",
+        "extra": {
+            "patient_id": "P2194",
+            "session_id": "2677ea36-1fc6-4ebe-856c-eb30ceaf6919"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T02:56:18",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "asset": "Backup Server",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.12.17.155",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P4392",
+            "session_id": "2677ea36-1fc6-4ebe-856c-eb30ceaf6919"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T02:57:18",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "asset": "Backup Server",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.169.28.65",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P6107",
+            "session_id": "2677ea36-1fc6-4ebe-856c-eb30ceaf6919"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T03:04:18",
+        "source": "EHR",
+        "event_type": "LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "asset": "Backup Server",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.167.225.253",
+        "destination_ip": "10.0.0.10",
+        "description": "User logged out of the EHR system.",
+        "extra": {
+            "patient_id": "P4947",
+            "session_id": "2677ea36-1fc6-4ebe-856c-eb30ceaf6919"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T14:13:30",
+        "source": "EHR",
+        "event_type": "LOGIN",
+        "user": "nurse_williams",
+        "user_role": "NURSE",
+        "department": "Emergency",
+        "asset": "VPN Gateway",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.187.64.47",
+        "destination_ip": "10.0.0.10",
+        "description": "User logged into the EHR system.",
+        "extra": {
+            "patient_id": "P2604",
+            "session_id": "56f13b14-fadc-46d9-80c6-9c215a0aa93a"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T14:14:30",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "nurse_williams",
+        "user_role": "NURSE",
+        "department": "Emergency",
+        "asset": "VPN Gateway",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.85.255.17",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P1887",
+            "session_id": "56f13b14-fadc-46d9-80c6-9c215a0aa93a"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T14:17:30",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "nurse_williams",
+        "user_role": "NURSE",
+        "department": "Emergency",
+        "asset": "VPN Gateway",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.83.58.168",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P7925",
+            "session_id": "56f13b14-fadc-46d9-80c6-9c215a0aa93a"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T14:19:30",
+        "source": "EHR",
+        "event_type": "UPDATE_RECORD",
+        "user": "nurse_williams",
+        "user_role": "NURSE",
+        "department": "Emergency",
+        "asset": "VPN Gateway",
+        "severity": "MEDIUM",
+        "status": "SUCCESS",
+        "source_ip": "10.123.177.235",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record updated.",
+        "extra": {
+            "patient_id": "P8486",
+            "session_id": "56f13b14-fadc-46d9-80c6-9c215a0aa93a"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T14:21:30",
+        "source": "EHR",
+        "event_type": "LOGOUT",
+        "user": "nurse_williams",
+        "user_role": "NURSE",
+        "department": "Emergency",
+        "asset": "VPN Gateway",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.43.109.126",
+        "destination_ip": "10.0.0.10",
+        "description": "User logged out of the EHR system.",
+        "extra": {
+            "patient_id": "P2695",
+            "session_id": "56f13b14-fadc-46d9-80c6-9c215a0aa93a"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T16:01:18",
+        "source": "EHR",
+        "event_type": "LOGIN",
+        "user": "admin_green",
+        "user_role": "ADMIN",
+        "department": "Administration",
+        "asset": "Prescription Service",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.151.251.18",
+        "destination_ip": "10.0.0.10",
+        "description": "User logged into the EHR system.",
+        "extra": {
+            "patient_id": "P1744",
+            "session_id": "2a059102-9715-4f02-9cfe-b528bd251ec2"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T16:03:18",
+        "source": "EHR",
+        "event_type": "LOGOUT",
+        "user": "admin_green",
+        "user_role": "ADMIN",
+        "department": "Administration",
+        "asset": "Prescription Service",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.149.54.117",
+        "destination_ip": "10.0.0.10",
+        "description": "User logged out of the EHR system.",
+        "extra": {
+            "patient_id": "P3144",
+            "session_id": "2a059102-9715-4f02-9cfe-b528bd251ec2"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T14:51:02",
+        "source": "EHR",
+        "event_type": "LOGIN",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "asset": "Prescription Service",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.208.211.45",
+        "destination_ip": "10.0.0.10",
+        "description": "User logged into the EHR system.",
+        "extra": {
+            "patient_id": "P6329",
+            "session_id": "b8a64de9-d91a-4353-bd1b-eb691622430d"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T14:53:02",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "asset": "Prescription Service",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.183.237.239",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P9932",
+            "session_id": "b8a64de9-d91a-4353-bd1b-eb691622430d"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T14:55:02",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "asset": "Prescription Service",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.84.205.14",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P3504",
+            "session_id": "b8a64de9-d91a-4353-bd1b-eb691622430d"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T14:57:02",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "asset": "Prescription Service",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.80.242.103",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P6663",
+            "session_id": "b8a64de9-d91a-4353-bd1b-eb691622430d"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T15:03:02",
+        "source": "EHR",
+        "event_type": "PRINT_RECORD",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "asset": "Prescription Service",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.147.160.26",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record printed.",
+        "extra": {
+            "patient_id": "P2417",
+            "session_id": "b8a64de9-d91a-4353-bd1b-eb691622430d"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T14:56:02",
+        "source": "EHR",
+        "event_type": "LOGOUT",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "asset": "Prescription Service",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.57.162.102",
+        "destination_ip": "10.0.0.10",
+        "description": "User logged out of the EHR system.",
+        "extra": {
+            "patient_id": "P8496",
+            "session_id": "b8a64de9-d91a-4353-bd1b-eb691622430d"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T22:56:55",
+        "source": "EHR",
+        "event_type": "LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "asset": "Laboratory Information System",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.27.220.114",
+        "destination_ip": "10.0.0.10",
+        "description": "User logged into the EHR system.",
+        "extra": {
+            "patient_id": "P8246",
+            "session_id": "3b7c2943-16ea-41bd-b18a-a59d375c623d"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T22:59:55",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "asset": "Laboratory Information System",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.155.193.23",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P7156",
+            "session_id": "3b7c2943-16ea-41bd-b18a-a59d375c623d"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T23:00:55",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "asset": "Laboratory Information System",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.53.222.202",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P9950",
+            "session_id": "3b7c2943-16ea-41bd-b18a-a59d375c623d"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T23:05:55",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "asset": "Laboratory Information System",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.139.239.15",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P2953",
+            "session_id": "3b7c2943-16ea-41bd-b18a-a59d375c623d"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T23:00:55",
+        "source": "EHR",
+        "event_type": "UPDATE_RECORD",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "asset": "Laboratory Information System",
+        "severity": "MEDIUM",
+        "status": "SUCCESS",
+        "source_ip": "10.179.111.208",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record updated.",
+        "extra": {
+            "patient_id": "P2102",
+            "session_id": "3b7c2943-16ea-41bd-b18a-a59d375c623d"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T23:06:55",
+        "source": "EHR",
+        "event_type": "LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "asset": "Laboratory Information System",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.153.53.19",
+        "destination_ip": "10.0.0.10",
+        "description": "User logged out of the EHR system.",
+        "extra": {
+            "patient_id": "P9782",
+            "session_id": "3b7c2943-16ea-41bd-b18a-a59d375c623d"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T06:04:46",
+        "source": "EHR",
+        "event_type": "LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "asset": "IDS Sensor",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.144.144.249",
+        "destination_ip": "10.0.0.10",
+        "description": "User logged into the EHR system.",
+        "extra": {
+            "patient_id": "P3778",
+            "session_id": "48924f31-405a-4bfa-9996-29c28969f983"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T06:06:46",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "asset": "IDS Sensor",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.17.209.184",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P5820",
+            "session_id": "48924f31-405a-4bfa-9996-29c28969f983"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T06:06:46",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "asset": "IDS Sensor",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.63.35.234",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P7958",
+            "session_id": "48924f31-405a-4bfa-9996-29c28969f983"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T06:10:46",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "asset": "IDS Sensor",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.208.147.231",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P2921",
+            "session_id": "48924f31-405a-4bfa-9996-29c28969f983"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T06:08:46",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "asset": "IDS Sensor",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.12.195.25",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P5071",
+            "session_id": "48924f31-405a-4bfa-9996-29c28969f983"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T06:14:46",
+        "source": "EHR",
+        "event_type": "UPDATE_RECORD",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "asset": "IDS Sensor",
+        "severity": "MEDIUM",
+        "status": "SUCCESS",
+        "source_ip": "10.106.43.232",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record updated.",
+        "extra": {
+            "patient_id": "P4624",
+            "session_id": "48924f31-405a-4bfa-9996-29c28969f983"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T06:10:46",
+        "source": "EHR",
+        "event_type": "LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "asset": "IDS Sensor",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.92.250.236",
+        "destination_ip": "10.0.0.10",
+        "description": "User logged out of the EHR system.",
+        "extra": {
+            "patient_id": "P1829",
+            "session_id": "48924f31-405a-4bfa-9996-29c28969f983"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T05:23:47",
+        "source": "EHR",
+        "event_type": "LOGIN",
+        "user": "nurse_johnson",
+        "user_role": "NURSE",
+        "department": "Pediatrics",
+        "asset": "Firewall",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.75.97.244",
+        "destination_ip": "10.0.0.10",
+        "description": "User logged into the EHR system.",
+        "extra": {
+            "patient_id": "P3399",
+            "session_id": "8e7cb8f5-38c7-4a12-a030-459f342e93c6"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T05:25:47",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "nurse_johnson",
+        "user_role": "NURSE",
+        "department": "Pediatrics",
+        "asset": "Firewall",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.64.16.61",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P5926",
+            "session_id": "8e7cb8f5-38c7-4a12-a030-459f342e93c6"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T05:29:47",
+        "source": "EHR",
+        "event_type": "LOGOUT",
+        "user": "nurse_johnson",
+        "user_role": "NURSE",
+        "department": "Pediatrics",
+        "asset": "Firewall",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.151.84.86",
+        "destination_ip": "10.0.0.10",
+        "description": "User logged out of the EHR system.",
+        "extra": {
+            "patient_id": "P2874",
+            "session_id": "8e7cb8f5-38c7-4a12-a030-459f342e93c6"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T10:43:46",
+        "source": "EHR",
+        "event_type": "LOGIN",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "asset": "VPN Gateway",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.79.152.172",
+        "destination_ip": "10.0.0.10",
+        "description": "User logged into the EHR system.",
+        "extra": {
+            "patient_id": "P4297",
+            "session_id": "46d8eb12-0c61-4bbe-b777-1bd5ba9eb80f"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T10:46:46",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "asset": "VPN Gateway",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.108.97.33",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P7598",
+            "session_id": "46d8eb12-0c61-4bbe-b777-1bd5ba9eb80f"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T10:47:46",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "asset": "VPN Gateway",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.194.7.34",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P1363",
+            "session_id": "46d8eb12-0c61-4bbe-b777-1bd5ba9eb80f"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T10:49:46",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "asset": "VPN Gateway",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.81.5.54",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P7316",
+            "session_id": "46d8eb12-0c61-4bbe-b777-1bd5ba9eb80f"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T10:47:46",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "asset": "VPN Gateway",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.221.215.23",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P5747",
+            "session_id": "46d8eb12-0c61-4bbe-b777-1bd5ba9eb80f"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T10:53:46",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "asset": "VPN Gateway",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.47.252.213",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P7572",
+            "session_id": "46d8eb12-0c61-4bbe-b777-1bd5ba9eb80f"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T10:49:46",
+        "source": "EHR",
+        "event_type": "LOGOUT",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "asset": "VPN Gateway",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.132.199.111",
+        "destination_ip": "10.0.0.10",
+        "description": "User logged out of the EHR system.",
+        "extra": {
+            "patient_id": "P1449",
+            "session_id": "46d8eb12-0c61-4bbe-b777-1bd5ba9eb80f"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T09:51:16",
+        "source": "EHR",
+        "event_type": "LOGIN",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "asset": "EHR Server",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.168.5.205",
+        "destination_ip": "10.0.0.10",
+        "description": "User logged into the EHR system.",
+        "extra": {
+            "patient_id": "P4584",
+            "session_id": "be9de473-7722-4b77-90f1-d92f358f0227"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T09:52:16",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "asset": "EHR Server",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.117.180.177",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P9634",
+            "session_id": "be9de473-7722-4b77-90f1-d92f358f0227"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T09:53:16",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "asset": "EHR Server",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.84.34.10",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P4068",
+            "session_id": "be9de473-7722-4b77-90f1-d92f358f0227"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T10:00:16",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "asset": "EHR Server",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.75.83.39",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P2462",
+            "session_id": "be9de473-7722-4b77-90f1-d92f358f0227"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T10:03:16",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "asset": "EHR Server",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.81.189.98",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P6455",
+            "session_id": "be9de473-7722-4b77-90f1-d92f358f0227"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T10:06:16",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "asset": "EHR Server",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.44.30.145",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P6363",
+            "session_id": "be9de473-7722-4b77-90f1-d92f358f0227"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T09:57:16",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "asset": "EHR Server",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.172.52.174",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P5800",
+            "session_id": "be9de473-7722-4b77-90f1-d92f358f0227"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T10:12:16",
+        "source": "EHR",
+        "event_type": "UPDATE_RECORD",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "asset": "EHR Server",
+        "severity": "MEDIUM",
+        "status": "SUCCESS",
+        "source_ip": "10.167.57.194",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record updated.",
+        "extra": {
+            "patient_id": "P9212",
+            "session_id": "be9de473-7722-4b77-90f1-d92f358f0227"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T09:59:16",
+        "source": "EHR",
+        "event_type": "LOGOUT",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "asset": "EHR Server",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.99.95.100",
+        "destination_ip": "10.0.0.10",
+        "description": "User logged out of the EHR system.",
+        "extra": {
+            "patient_id": "P9708",
+            "session_id": "be9de473-7722-4b77-90f1-d92f358f0227"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T17:57:23",
+        "source": "EHR",
+        "event_type": "LOGIN",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "asset": "Patient Database",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.101.135.81",
+        "destination_ip": "10.0.0.10",
+        "description": "User logged into the EHR system.",
+        "extra": {
+            "patient_id": "P3944",
+            "session_id": "1763c0cd-412c-4e8f-b2e5-2d3bd57cc55a"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T17:59:23",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "asset": "Patient Database",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.250.83.42",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P4153",
+            "session_id": "1763c0cd-412c-4e8f-b2e5-2d3bd57cc55a"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T17:59:23",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "asset": "Patient Database",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.166.236.218",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P9086",
+            "session_id": "1763c0cd-412c-4e8f-b2e5-2d3bd57cc55a"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T18:03:23",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "asset": "Patient Database",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.199.45.122",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P2025",
+            "session_id": "1763c0cd-412c-4e8f-b2e5-2d3bd57cc55a"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T18:01:23",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "asset": "Patient Database",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.57.212.71",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P9990",
+            "session_id": "1763c0cd-412c-4e8f-b2e5-2d3bd57cc55a"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T18:07:23",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "asset": "Patient Database",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.247.10.68",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P4017",
+            "session_id": "1763c0cd-412c-4e8f-b2e5-2d3bd57cc55a"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T18:03:23",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "asset": "Patient Database",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.183.171.120",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P3386",
+            "session_id": "1763c0cd-412c-4e8f-b2e5-2d3bd57cc55a"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T18:04:23",
+        "source": "EHR",
+        "event_type": "PRINT_RECORD",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "asset": "Patient Database",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.228.173.61",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record printed.",
+        "extra": {
+            "patient_id": "P3133",
+            "session_id": "1763c0cd-412c-4e8f-b2e5-2d3bd57cc55a"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T18:13:23",
+        "source": "EHR",
+        "event_type": "LOGOUT",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "asset": "Patient Database",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.60.231.19",
+        "destination_ip": "10.0.0.10",
+        "description": "User logged out of the EHR system.",
+        "extra": {
+            "patient_id": "P8401",
+            "session_id": "1763c0cd-412c-4e8f-b2e5-2d3bd57cc55a"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T08:21:02",
+        "source": "EHR",
+        "event_type": "LOGIN",
+        "user": "lab_walker",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "asset": "Backup Server",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.155.207.243",
+        "destination_ip": "10.0.0.10",
+        "description": "User logged into the EHR system.",
+        "extra": {
+            "patient_id": "P3521",
+            "session_id": "25b7f573-a669-43ba-ac8d-8b73110c4e1b"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T08:22:02",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "lab_walker",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "asset": "Backup Server",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.244.99.95",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P8783",
+            "session_id": "25b7f573-a669-43ba-ac8d-8b73110c4e1b"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T08:23:02",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "lab_walker",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "asset": "Backup Server",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.240.69.4",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P3467",
+            "session_id": "25b7f573-a669-43ba-ac8d-8b73110c4e1b"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T08:24:02",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "lab_walker",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "asset": "Backup Server",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.77.64.253",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P9415",
+            "session_id": "25b7f573-a669-43ba-ac8d-8b73110c4e1b"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T08:29:02",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "lab_walker",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "asset": "Backup Server",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.164.57.40",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P9333",
+            "session_id": "25b7f573-a669-43ba-ac8d-8b73110c4e1b"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T08:26:02",
+        "source": "EHR",
+        "event_type": "UPDATE_RECORD",
+        "user": "lab_walker",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "asset": "Backup Server",
+        "severity": "MEDIUM",
+        "status": "SUCCESS",
+        "source_ip": "10.31.201.132",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record updated.",
+        "extra": {
+            "patient_id": "P9379",
+            "session_id": "25b7f573-a669-43ba-ac8d-8b73110c4e1b"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T08:27:02",
+        "source": "EHR",
+        "event_type": "LOGOUT",
+        "user": "lab_walker",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "asset": "Backup Server",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.119.218.18",
+        "destination_ip": "10.0.0.10",
+        "description": "User logged out of the EHR system.",
+        "extra": {
+            "patient_id": "P1279",
+            "session_id": "25b7f573-a669-43ba-ac8d-8b73110c4e1b"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T17:42:29",
+        "source": "EHR",
+        "event_type": "LOGIN",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "asset": "Laboratory Information System",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.28.132.246",
+        "destination_ip": "10.0.0.10",
+        "description": "User logged into the EHR system.",
+        "extra": {
+            "patient_id": "P7613",
+            "session_id": "85b710b1-d2b4-475c-8893-eceb6a2d3e76"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T17:44:29",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "asset": "Laboratory Information System",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.27.216.253",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P9613",
+            "session_id": "85b710b1-d2b4-475c-8893-eceb6a2d3e76"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T17:44:29",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "asset": "Laboratory Information System",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.108.46.151",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P7082",
+            "session_id": "85b710b1-d2b4-475c-8893-eceb6a2d3e76"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T17:51:29",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "asset": "Laboratory Information System",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.144.246.39",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P2741",
+            "session_id": "85b710b1-d2b4-475c-8893-eceb6a2d3e76"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T17:50:29",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "asset": "Laboratory Information System",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.221.116.26",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P5929",
+            "session_id": "85b710b1-d2b4-475c-8893-eceb6a2d3e76"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T17:57:29",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "asset": "Laboratory Information System",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.180.141.58",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P2492",
+            "session_id": "85b710b1-d2b4-475c-8893-eceb6a2d3e76"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T17:54:29",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "asset": "Laboratory Information System",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.4.255.157",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P1427",
+            "session_id": "85b710b1-d2b4-475c-8893-eceb6a2d3e76"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T18:03:29",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "asset": "Laboratory Information System",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.103.113.25",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P7499",
+            "session_id": "85b710b1-d2b4-475c-8893-eceb6a2d3e76"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T18:06:29",
+        "source": "EHR",
+        "event_type": "UPDATE_RECORD",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "asset": "Laboratory Information System",
+        "severity": "MEDIUM",
+        "status": "SUCCESS",
+        "source_ip": "10.180.209.37",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record updated.",
+        "extra": {
+            "patient_id": "P6959",
+            "session_id": "85b710b1-d2b4-475c-8893-eceb6a2d3e76"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T18:09:29",
+        "source": "EHR",
+        "event_type": "PRINT_RECORD",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "asset": "Laboratory Information System",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.38.109.136",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record printed.",
+        "extra": {
+            "patient_id": "P3410",
+            "session_id": "85b710b1-d2b4-475c-8893-eceb6a2d3e76"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T18:12:29",
+        "source": "EHR",
+        "event_type": "LOGOUT",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "asset": "Laboratory Information System",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.162.211.97",
+        "destination_ip": "10.0.0.10",
+        "description": "User logged out of the EHR system.",
+        "extra": {
+            "patient_id": "P8809",
+            "session_id": "85b710b1-d2b4-475c-8893-eceb6a2d3e76"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T18:26:21",
+        "source": "EHR",
+        "event_type": "LOGIN",
+        "user": "lab_walker",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "asset": "Radiology PACS",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.18.60.174",
+        "destination_ip": "10.0.0.10",
+        "description": "User logged into the EHR system.",
+        "extra": {
+            "patient_id": "P5089",
+            "session_id": "5dc8a056-4154-498b-ad7c-24f8c7fe00d3"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T18:27:21",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "lab_walker",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "asset": "Radiology PACS",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.235.88.127",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P4145",
+            "session_id": "5dc8a056-4154-498b-ad7c-24f8c7fe00d3"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T18:30:21",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "lab_walker",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "asset": "Radiology PACS",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.216.59.227",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P5097",
+            "session_id": "5dc8a056-4154-498b-ad7c-24f8c7fe00d3"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T18:35:21",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "lab_walker",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "asset": "Radiology PACS",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.145.233.3",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P6277",
+            "session_id": "5dc8a056-4154-498b-ad7c-24f8c7fe00d3"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T18:34:21",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "lab_walker",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "asset": "Radiology PACS",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.194.108.58",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P9896",
+            "session_id": "5dc8a056-4154-498b-ad7c-24f8c7fe00d3"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T18:31:21",
+        "source": "EHR",
+        "event_type": "UPDATE_RECORD",
+        "user": "lab_walker",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "asset": "Radiology PACS",
+        "severity": "MEDIUM",
+        "status": "SUCCESS",
+        "source_ip": "10.241.39.53",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record updated.",
+        "extra": {
+            "patient_id": "P6983",
+            "session_id": "5dc8a056-4154-498b-ad7c-24f8c7fe00d3"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T18:38:21",
+        "source": "EHR",
+        "event_type": "LOGOUT",
+        "user": "lab_walker",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "asset": "Radiology PACS",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.187.56.94",
+        "destination_ip": "10.0.0.10",
+        "description": "User logged out of the EHR system.",
+        "extra": {
+            "patient_id": "P4218",
+            "session_id": "5dc8a056-4154-498b-ad7c-24f8c7fe00d3"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T20:56:58",
+        "source": "EHR",
+        "event_type": "LOGIN",
+        "user": "nurse_williams",
+        "user_role": "NURSE",
+        "department": "Emergency",
+        "asset": "Patient Database",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.230.219.159",
+        "destination_ip": "10.0.0.10",
+        "description": "User logged into the EHR system.",
+        "extra": {
+            "patient_id": "P5999",
+            "session_id": "98f7d72e-6587-4b37-88bb-686c18070791"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T20:57:58",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "nurse_williams",
+        "user_role": "NURSE",
+        "department": "Emergency",
+        "asset": "Patient Database",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.155.240.86",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P9900",
+            "session_id": "98f7d72e-6587-4b37-88bb-686c18070791"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T21:02:58",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "nurse_williams",
+        "user_role": "NURSE",
+        "department": "Emergency",
+        "asset": "Patient Database",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.193.66.104",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P5759",
+            "session_id": "98f7d72e-6587-4b37-88bb-686c18070791"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T21:05:58",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "nurse_williams",
+        "user_role": "NURSE",
+        "department": "Emergency",
+        "asset": "Patient Database",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.112.68.176",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P2995",
+            "session_id": "98f7d72e-6587-4b37-88bb-686c18070791"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T21:04:58",
+        "source": "EHR",
+        "event_type": "VIEW_RECORD",
+        "user": "nurse_williams",
+        "user_role": "NURSE",
+        "department": "Emergency",
+        "asset": "Patient Database",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.13.78.67",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record accessed.",
+        "extra": {
+            "patient_id": "P5363",
+            "session_id": "98f7d72e-6587-4b37-88bb-686c18070791"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T21:06:58",
+        "source": "EHR",
+        "event_type": "UPDATE_RECORD",
+        "user": "nurse_williams",
+        "user_role": "NURSE",
+        "department": "Emergency",
+        "asset": "Patient Database",
+        "severity": "MEDIUM",
+        "status": "SUCCESS",
+        "source_ip": "10.118.108.13",
+        "destination_ip": "10.0.0.10",
+        "description": "Patient medical record updated.",
+        "extra": {
+            "patient_id": "P2837",
+            "session_id": "98f7d72e-6587-4b37-88bb-686c18070791"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T21:14:58",
+        "source": "EHR",
+        "event_type": "LOGOUT",
+        "user": "nurse_williams",
+        "user_role": "NURSE",
+        "department": "Emergency",
+        "asset": "Patient Database",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "source_ip": "10.65.96.134",
+        "destination_ip": "10.0.0.10",
+        "description": "User logged out of the EHR system.",
+        "extra": {
+            "patient_id": "P9349",
+            "session_id": "98f7d72e-6587-4b37-88bb-686c18070791"
+        }
+    }
+]

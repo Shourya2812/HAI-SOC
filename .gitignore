@@ -42,3 +42,6 @@ datasets/raw/
 # ==========================
 .DS_Store
 Thumbs.db
+
+# Generated datasets
+datasets/processed/

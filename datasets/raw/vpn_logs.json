@@ -1,0 +1,5102 @@
+[
+    {
+        "timestamp": "2026-07-22T11:53:51",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.93.33.63",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "92bc5880-2b3e-436a-bfd5-bc6ae62ce6a1",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T11:54:51",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.93.33.63",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "92bc5880-2b3e-436a-bfd5-bc6ae62ce6a1",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T11:55:51",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.93.33.63",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "92bc5880-2b3e-436a-bfd5-bc6ae62ce6a1",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T14:25:40",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.125.216.176",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "5420c806-c297-4224-99c7-bf1ff4bf408f",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T14:26:40",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.125.216.176",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "5420c806-c297-4224-99c7-bf1ff4bf408f",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T14:27:40",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.125.216.176",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "5420c806-c297-4224-99c7-bf1ff4bf408f",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T20:29:40",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.64.21.13",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "3fdb1ab0-0d89-4f5b-bf64-a4da05eec487",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T20:30:40",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.64.21.13",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "3fdb1ab0-0d89-4f5b-bf64-a4da05eec487",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T20:31:40",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.64.21.13",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "3fdb1ab0-0d89-4f5b-bf64-a4da05eec487",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T07:45:22",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.49.74.53",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "6e00d97e-769c-4eaa-ae84-151f2dd71723",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T07:46:22",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.49.74.53",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "6e00d97e-769c-4eaa-ae84-151f2dd71723",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T07:47:22",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.49.74.53",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "6e00d97e-769c-4eaa-ae84-151f2dd71723",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T03:29:13",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.155.54.181",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "08d43be2-1264-42eb-9f2c-f6a8e1afa0fb",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T03:30:13",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.155.54.181",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "08d43be2-1264-42eb-9f2c-f6a8e1afa0fb",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T03:31:13",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.155.54.181",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "08d43be2-1264-42eb-9f2c-f6a8e1afa0fb",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T02:12:05",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.166.192.144",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "acc1b1d8-e869-44af-bdca-7269a09838cf",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T02:13:05",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.166.192.144",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "acc1b1d8-e869-44af-bdca-7269a09838cf",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T02:14:05",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.166.192.144",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "acc1b1d8-e869-44af-bdca-7269a09838cf",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T18:30:19",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.80.227.137",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "ed2bfeb5-1a02-4430-836d-d802ee47d20b",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T18:31:19",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.80.227.137",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "ed2bfeb5-1a02-4430-836d-d802ee47d20b",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T18:32:19",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.80.227.137",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "ed2bfeb5-1a02-4430-836d-d802ee47d20b",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T13:28:47",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.157.108.47",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "c970f2db-6187-46ef-9197-407f290d4938",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T13:29:47",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.157.108.47",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "c970f2db-6187-46ef-9197-407f290d4938",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T13:30:47",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.157.108.47",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "c970f2db-6187-46ef-9197-407f290d4938",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T12:39:11",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.14.74.147",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "096df0db-3d00-411f-91c3-e39487208dea",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T12:40:11",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.14.74.147",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "096df0db-3d00-411f-91c3-e39487208dea",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T12:41:11",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.14.74.147",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "096df0db-3d00-411f-91c3-e39487208dea",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T13:42:06",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.202.175.102",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "ab4d2d7f-6d33-4586-ac62-9afa460e601f",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T13:43:06",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.202.175.102",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "ab4d2d7f-6d33-4586-ac62-9afa460e601f",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T13:44:06",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.202.175.102",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "ab4d2d7f-6d33-4586-ac62-9afa460e601f",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T12:34:27",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.76.208.107",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "8e91d1b8-045d-4740-832c-37540a828ad0",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T12:35:27",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.76.208.107",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "8e91d1b8-045d-4740-832c-37540a828ad0",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T12:36:27",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.76.208.107",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "8e91d1b8-045d-4740-832c-37540a828ad0",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T10:47:54",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.47.154.212",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "1db2d774-fc82-4f20-98b3-06b0edc9bd78",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T10:48:54",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.47.154.212",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "1db2d774-fc82-4f20-98b3-06b0edc9bd78",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T10:49:54",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.47.154.212",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "1db2d774-fc82-4f20-98b3-06b0edc9bd78",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T10:16:08",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.73.150.130",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "88f2a692-648e-4296-8b4a-860aa3876197",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T10:17:08",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.73.150.130",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "88f2a692-648e-4296-8b4a-860aa3876197",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T10:18:08",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.73.150.130",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "88f2a692-648e-4296-8b4a-860aa3876197",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T13:52:15",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.234.192.81",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "09717fc1-cdce-4f9d-bb46-1768649e5586",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T13:53:15",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.234.192.81",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "09717fc1-cdce-4f9d-bb46-1768649e5586",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T13:54:15",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.234.192.81",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "09717fc1-cdce-4f9d-bb46-1768649e5586",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T09:07:15",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.154.195.14",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "e03ca615-1d5b-4671-8e4b-ac62af916539",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T09:08:15",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.154.195.14",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "e03ca615-1d5b-4671-8e4b-ac62af916539",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T09:09:15",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.154.195.14",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "e03ca615-1d5b-4671-8e4b-ac62af916539",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T19:06:12",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.3.98.3",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "cc6209a7-d4ae-4ab2-bfca-d39c5d8e0ba8",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T19:07:12",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.3.98.3",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "cc6209a7-d4ae-4ab2-bfca-d39c5d8e0ba8",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T19:08:12",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.3.98.3",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "cc6209a7-d4ae-4ab2-bfca-d39c5d8e0ba8",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T07:14:33",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.254.180.198",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "f92284ff-8843-4efe-bacf-4a7c7ddde0e0",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T07:15:33",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.254.180.198",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "f92284ff-8843-4efe-bacf-4a7c7ddde0e0",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T07:16:33",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.254.180.198",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "f92284ff-8843-4efe-bacf-4a7c7ddde0e0",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T00:39:28",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.5.156.112",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "1710326d-14f4-4fa2-b9c1-9cc18400d488",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T00:40:28",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.5.156.112",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "1710326d-14f4-4fa2-b9c1-9cc18400d488",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T00:41:28",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.5.156.112",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "1710326d-14f4-4fa2-b9c1-9cc18400d488",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T07:55:25",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.194.191.44",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "cf87bf56-26f8-40e4-a774-4acf01af1f69",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T07:56:25",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.194.191.44",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "cf87bf56-26f8-40e4-a774-4acf01af1f69",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T07:57:25",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.194.191.44",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "cf87bf56-26f8-40e4-a774-4acf01af1f69",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T14:02:01",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.137.190.14",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "998ed3fd-74a8-4e37-ad01-692e4d3ff48f",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T14:03:01",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.137.190.14",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "998ed3fd-74a8-4e37-ad01-692e4d3ff48f",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T14:04:01",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.137.190.14",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "998ed3fd-74a8-4e37-ad01-692e4d3ff48f",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T12:49:39",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.0.168.4",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "bc9ac1bb-c025-483b-8435-1abf9ec6df9b",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T12:50:39",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.0.168.4",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "bc9ac1bb-c025-483b-8435-1abf9ec6df9b",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T12:51:39",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.0.168.4",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "bc9ac1bb-c025-483b-8435-1abf9ec6df9b",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T14:52:12",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.7.97.173",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "b62789b7-2eb7-4cf6-ab6b-e88c10b32afd",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T14:53:12",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.7.97.173",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "b62789b7-2eb7-4cf6-ab6b-e88c10b32afd",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T14:54:12",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.7.97.173",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "b62789b7-2eb7-4cf6-ab6b-e88c10b32afd",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T12:58:01",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.157.254.50",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "47c60f1f-6064-4ce3-86a3-97442617916e",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T12:59:01",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.157.254.50",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "47c60f1f-6064-4ce3-86a3-97442617916e",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T13:00:01",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.157.254.50",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "47c60f1f-6064-4ce3-86a3-97442617916e",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T21:12:48",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.184.83.57",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "16ae1d2b-55a7-47ae-9e34-63cab4681411",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T21:13:48",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.184.83.57",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "16ae1d2b-55a7-47ae-9e34-63cab4681411",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T21:14:48",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.184.83.57",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "16ae1d2b-55a7-47ae-9e34-63cab4681411",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T08:44:05",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.23.83.200",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "4d1e93a3-c146-4423-af23-4b0f2ac707ee",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T08:45:05",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.23.83.200",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "4d1e93a3-c146-4423-af23-4b0f2ac707ee",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T08:46:05",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.23.83.200",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "4d1e93a3-c146-4423-af23-4b0f2ac707ee",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T18:05:04",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.70.209.230",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "45f77783-9365-4d07-867a-7d785d208803",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T18:06:04",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.70.209.230",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "45f77783-9365-4d07-867a-7d785d208803",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T18:07:04",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.70.209.230",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "45f77783-9365-4d07-867a-7d785d208803",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T11:16:36",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.79.187.73",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "9f1dba09-b6e1-46e7-a0e7-c327a90b5d9b",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T11:17:36",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.79.187.73",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "9f1dba09-b6e1-46e7-a0e7-c327a90b5d9b",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T11:18:36",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.79.187.73",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "9f1dba09-b6e1-46e7-a0e7-c327a90b5d9b",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T13:19:36",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.57.254.96",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "453a86bf-6b31-4c06-99bb-95a3951041e3",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T13:20:36",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.57.254.96",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "453a86bf-6b31-4c06-99bb-95a3951041e3",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T13:21:36",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.57.254.96",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "453a86bf-6b31-4c06-99bb-95a3951041e3",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T10:26:51",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.195.52.134",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "a9aeef99-d12b-4500-b0df-7ec48ae8ef09",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T10:27:51",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.195.52.134",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "a9aeef99-d12b-4500-b0df-7ec48ae8ef09",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T10:28:51",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.195.52.134",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "a9aeef99-d12b-4500-b0df-7ec48ae8ef09",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T04:17:50",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.72.205.224",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "e38f5296-f1fb-4a77-a4e3-f822bbe28102",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T04:18:50",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.72.205.224",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "e38f5296-f1fb-4a77-a4e3-f822bbe28102",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T04:19:50",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.72.205.224",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "e38f5296-f1fb-4a77-a4e3-f822bbe28102",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T16:38:22",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.73.186.185",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "0deeaabf-b7fc-4100-a543-770e5840e77b",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T16:39:22",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.73.186.185",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "0deeaabf-b7fc-4100-a543-770e5840e77b",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T16:40:22",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.73.186.185",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "0deeaabf-b7fc-4100-a543-770e5840e77b",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T16:28:39",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.199.170.35",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "9c0fc994-72ef-4335-be84-f7ce8116c1c4",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T16:29:39",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.199.170.35",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "9c0fc994-72ef-4335-be84-f7ce8116c1c4",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T16:30:39",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.199.170.35",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "9c0fc994-72ef-4335-be84-f7ce8116c1c4",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T18:41:06",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.134.207.91",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "697d2326-fdb8-4c3c-8b24-0717f1ac99ec",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T18:42:06",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.134.207.91",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "697d2326-fdb8-4c3c-8b24-0717f1ac99ec",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T18:43:06",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.134.207.91",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "697d2326-fdb8-4c3c-8b24-0717f1ac99ec",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T20:46:01",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.110.217.239",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "61946c17-b61b-4eb3-9e8a-e38ce3cf2359",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T20:47:01",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.110.217.239",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "61946c17-b61b-4eb3-9e8a-e38ce3cf2359",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T20:48:01",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.110.217.239",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "61946c17-b61b-4eb3-9e8a-e38ce3cf2359",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T10:48:32",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.103.123.100",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "7b785817-0410-4fb2-8120-b57d024b61ed",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T10:49:32",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.103.123.100",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "7b785817-0410-4fb2-8120-b57d024b61ed",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T10:50:32",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.103.123.100",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "7b785817-0410-4fb2-8120-b57d024b61ed",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T15:45:07",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.189.213.199",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "cca5e057-c7d7-4a82-af70-c187b8e77a64",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T15:46:07",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.189.213.199",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "cca5e057-c7d7-4a82-af70-c187b8e77a64",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T15:47:07",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.189.213.199",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "cca5e057-c7d7-4a82-af70-c187b8e77a64",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T20:28:56",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.50.233.144",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "de59ad8c-dcee-4257-b076-ea18a38a9b3c",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T20:29:56",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.50.233.144",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "de59ad8c-dcee-4257-b076-ea18a38a9b3c",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T20:30:56",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.50.233.144",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "de59ad8c-dcee-4257-b076-ea18a38a9b3c",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T17:24:32",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.108.194.188",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "8a2a2c71-a861-4abc-8672-67f786c9549c",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T17:25:32",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.108.194.188",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "8a2a2c71-a861-4abc-8672-67f786c9549c",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T17:26:32",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.108.194.188",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "8a2a2c71-a861-4abc-8672-67f786c9549c",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T16:44:16",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.198.124.15",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "ada385e2-ebf1-4fff-948e-7c2a0a7507b8",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T16:45:16",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.198.124.15",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "ada385e2-ebf1-4fff-948e-7c2a0a7507b8",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T16:46:16",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.198.124.15",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "ada385e2-ebf1-4fff-948e-7c2a0a7507b8",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T05:21:35",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.86.200.112",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "e7f7e1ef-0e4a-4349-9bcd-8421fb316492",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T05:22:35",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.86.200.112",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "e7f7e1ef-0e4a-4349-9bcd-8421fb316492",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T05:23:35",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.86.200.112",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "e7f7e1ef-0e4a-4349-9bcd-8421fb316492",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T17:15:18",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.105.101.221",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "b9e3096b-bdf0-4f84-8de7-61d5f9470b99",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T17:16:18",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.105.101.221",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "b9e3096b-bdf0-4f84-8de7-61d5f9470b99",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T17:17:18",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.105.101.221",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "b9e3096b-bdf0-4f84-8de7-61d5f9470b99",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T11:16:46",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.19.3.183",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "942738d1-a06a-476b-b1a1-6f9553d509dc",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T11:17:46",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.19.3.183",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "942738d1-a06a-476b-b1a1-6f9553d509dc",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T11:18:46",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.19.3.183",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "942738d1-a06a-476b-b1a1-6f9553d509dc",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T10:33:55",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.85.171.203",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "51ac84fe-e648-4ddb-a516-d15b43e21a28",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T10:34:55",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.85.171.203",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "51ac84fe-e648-4ddb-a516-d15b43e21a28",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T10:35:55",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.85.171.203",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "51ac84fe-e648-4ddb-a516-d15b43e21a28",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T08:16:30",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.195.176.22",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "b6b53fa5-37ab-454e-a413-22fb1709ab99",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T08:17:30",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.195.176.22",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "b6b53fa5-37ab-454e-a413-22fb1709ab99",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T08:18:30",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.195.176.22",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "b6b53fa5-37ab-454e-a413-22fb1709ab99",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T19:25:05",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.244.83.68",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "13dcba97-6c93-40ac-ad9e-0580daa6f16a",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T19:26:05",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.244.83.68",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "13dcba97-6c93-40ac-ad9e-0580daa6f16a",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T19:27:05",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.244.83.68",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "13dcba97-6c93-40ac-ad9e-0580daa6f16a",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T19:50:10",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.66.248.192",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "0a6db18b-f0bc-44a7-a514-603744b6d2b2",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T19:51:10",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.66.248.192",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "0a6db18b-f0bc-44a7-a514-603744b6d2b2",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T19:52:10",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.66.248.192",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "0a6db18b-f0bc-44a7-a514-603744b6d2b2",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T18:08:06",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.151.137.128",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "64286e0a-07c5-4dd8-bf23-ce86e991959d",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T18:09:06",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.151.137.128",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "64286e0a-07c5-4dd8-bf23-ce86e991959d",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T18:10:06",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.151.137.128",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "64286e0a-07c5-4dd8-bf23-ce86e991959d",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T00:11:06",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.137.9.193",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "2142baa8-3837-474a-ad75-5034adfef91f",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T00:12:06",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.137.9.193",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "2142baa8-3837-474a-ad75-5034adfef91f",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T00:13:06",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.137.9.193",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "2142baa8-3837-474a-ad75-5034adfef91f",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T07:14:52",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.69.196.192",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "8e9e70b2-95d1-4129-841e-42567574a22d",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T07:15:52",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.69.196.192",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "8e9e70b2-95d1-4129-841e-42567574a22d",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T07:16:52",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.69.196.192",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "8e9e70b2-95d1-4129-841e-42567574a22d",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T15:55:36",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.142.167.224",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "5ec94ae2-cc48-480a-9121-fceb7cf7266d",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T15:56:36",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.142.167.224",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "5ec94ae2-cc48-480a-9121-fceb7cf7266d",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T15:57:36",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.142.167.224",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "5ec94ae2-cc48-480a-9121-fceb7cf7266d",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T08:50:54",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.25.214.96",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "bea98f25-e62a-41ef-855f-85253d93c0d5",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T08:51:54",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.25.214.96",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "bea98f25-e62a-41ef-855f-85253d93c0d5",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T08:52:54",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.25.214.96",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "bea98f25-e62a-41ef-855f-85253d93c0d5",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T08:47:05",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.125.162.32",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "5fe5e3b7-9d09-476f-b9a3-226f9a14d7e4",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T08:48:05",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.125.162.32",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "5fe5e3b7-9d09-476f-b9a3-226f9a14d7e4",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T08:49:05",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.125.162.32",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "5fe5e3b7-9d09-476f-b9a3-226f9a14d7e4",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T12:04:05",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.11.33.172",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "0a1f7561-a057-4bd2-9187-78477790bad7",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T12:05:05",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.11.33.172",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "0a1f7561-a057-4bd2-9187-78477790bad7",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T12:06:05",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.11.33.172",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "0a1f7561-a057-4bd2-9187-78477790bad7",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T06:40:11",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.42.60.134",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "d9f30aa8-0c1d-4ecd-9d28-8d4ae9fd43c0",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T06:41:11",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.42.60.134",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "d9f30aa8-0c1d-4ecd-9d28-8d4ae9fd43c0",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T06:42:11",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.42.60.134",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "d9f30aa8-0c1d-4ecd-9d28-8d4ae9fd43c0",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T13:15:45",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.98.59.186",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "bef075f0-1665-4913-8bb6-829ae0c893f1",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T13:16:45",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.98.59.186",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "bef075f0-1665-4913-8bb6-829ae0c893f1",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T13:17:45",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.98.59.186",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "bef075f0-1665-4913-8bb6-829ae0c893f1",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T13:00:34",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.100.83.221",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "af68aae1-3a4e-4529-afe5-ad1e7636f73b",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T13:01:34",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.100.83.221",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "af68aae1-3a4e-4529-afe5-ad1e7636f73b",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T13:02:34",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.100.83.221",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "af68aae1-3a4e-4529-afe5-ad1e7636f73b",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T18:13:25",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.126.224.244",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "2374d356-57b2-40ea-be34-1bae08771810",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T18:14:25",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.126.224.244",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "2374d356-57b2-40ea-be34-1bae08771810",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T18:15:25",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.126.224.244",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "2374d356-57b2-40ea-be34-1bae08771810",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T08:21:49",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.63.161.88",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "defd511a-ca23-44db-bb90-a2bf00c5f3be",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T08:22:49",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.63.161.88",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "defd511a-ca23-44db-bb90-a2bf00c5f3be",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T08:23:49",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.63.161.88",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "defd511a-ca23-44db-bb90-a2bf00c5f3be",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T06:20:02",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.63.86.186",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "0e799deb-d9af-4325-899e-02a53c67bf5f",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T06:21:02",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.63.86.186",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "0e799deb-d9af-4325-899e-02a53c67bf5f",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T06:22:02",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.63.86.186",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "0e799deb-d9af-4325-899e-02a53c67bf5f",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T14:34:27",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.54.193.28",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "a92ab269-7f09-48c8-95cd-66d5a62bb411",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T14:35:27",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.54.193.28",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "a92ab269-7f09-48c8-95cd-66d5a62bb411",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T14:36:27",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.54.193.28",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "a92ab269-7f09-48c8-95cd-66d5a62bb411",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T23:11:08",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.74.16.129",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "2a975cfc-d57e-42b2-9920-a247e6e06499",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T23:12:08",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.74.16.129",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "2a975cfc-d57e-42b2-9920-a247e6e06499",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T23:13:08",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.74.16.129",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "2a975cfc-d57e-42b2-9920-a247e6e06499",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T16:40:09",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.131.108.227",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "092dfb5f-a1a1-44df-b667-d4e6dc85ea43",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T16:41:09",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.131.108.227",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "092dfb5f-a1a1-44df-b667-d4e6dc85ea43",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T16:42:09",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.131.108.227",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "092dfb5f-a1a1-44df-b667-d4e6dc85ea43",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T19:26:37",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.61.25.225",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "41c78410-cc97-4303-a26e-6cbd681fb2a3",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T19:27:37",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.61.25.225",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "41c78410-cc97-4303-a26e-6cbd681fb2a3",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T19:28:37",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.61.25.225",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "41c78410-cc97-4303-a26e-6cbd681fb2a3",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T12:59:24",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.115.215.17",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "40c378fb-e960-45e7-8252-4baff6f3ab39",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T13:00:24",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.115.215.17",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "40c378fb-e960-45e7-8252-4baff6f3ab39",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T13:01:24",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.115.215.17",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "40c378fb-e960-45e7-8252-4baff6f3ab39",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T15:42:46",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.13.204.53",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "1ef2d7f0-c732-4869-9283-3d00d65f6d78",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T15:43:46",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.13.204.53",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "1ef2d7f0-c732-4869-9283-3d00d65f6d78",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T15:44:46",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.13.204.53",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "1ef2d7f0-c732-4869-9283-3d00d65f6d78",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T22:55:22",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.235.61.39",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "49b90ae8-b513-496c-bd08-a7b0300406ab",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T22:56:22",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.235.61.39",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "49b90ae8-b513-496c-bd08-a7b0300406ab",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T22:57:22",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.235.61.39",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "49b90ae8-b513-496c-bd08-a7b0300406ab",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T14:28:54",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.231.235.61",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "082bf549-3612-44b5-85fb-9ec6f11d6fa5",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T14:29:54",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.231.235.61",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "082bf549-3612-44b5-85fb-9ec6f11d6fa5",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T14:30:54",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.231.235.61",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "082bf549-3612-44b5-85fb-9ec6f11d6fa5",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T15:43:44",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.118.123.85",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "14b71ca4-360c-41c4-9bee-d7e4d9523d37",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T15:44:44",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.118.123.85",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "14b71ca4-360c-41c4-9bee-d7e4d9523d37",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T15:45:44",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.118.123.85",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "14b71ca4-360c-41c4-9bee-d7e4d9523d37",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T16:57:01",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.196.96.250",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "d9eed5cc-9387-4f10-ba6f-7c6254c6a028",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T16:58:01",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.196.96.250",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "d9eed5cc-9387-4f10-ba6f-7c6254c6a028",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T16:59:01",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.196.96.250",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "d9eed5cc-9387-4f10-ba6f-7c6254c6a028",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T23:52:29",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.25.55.163",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "f7df337e-cdfb-49f2-9d73-cb6b07644104",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T23:53:29",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.25.55.163",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "f7df337e-cdfb-49f2-9d73-cb6b07644104",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T23:54:29",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.25.55.163",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "f7df337e-cdfb-49f2-9d73-cb6b07644104",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T11:35:23",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.7.67.206",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "25116dbf-ef71-4d42-91e6-d298fb2bf3f0",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T11:36:23",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.7.67.206",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "25116dbf-ef71-4d42-91e6-d298fb2bf3f0",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T11:37:23",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.7.67.206",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "25116dbf-ef71-4d42-91e6-d298fb2bf3f0",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T16:57:14",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.83.29.132",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "019fead2-4b30-4f41-9afe-227ffaf8c7a8",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T16:58:14",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.83.29.132",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "019fead2-4b30-4f41-9afe-227ffaf8c7a8",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T16:59:14",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.83.29.132",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "019fead2-4b30-4f41-9afe-227ffaf8c7a8",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T11:18:31",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.187.143.254",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "c0e5c174-793d-41f8-9dff-66efe0731220",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T11:19:31",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.187.143.254",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "c0e5c174-793d-41f8-9dff-66efe0731220",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T11:20:31",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.187.143.254",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "c0e5c174-793d-41f8-9dff-66efe0731220",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T15:27:59",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.190.153.180",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "71c5957f-f736-4671-b876-2997f9fcb121",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T15:28:59",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.190.153.180",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "71c5957f-f736-4671-b876-2997f9fcb121",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T15:29:59",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.190.153.180",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "71c5957f-f736-4671-b876-2997f9fcb121",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T15:12:50",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.127.102.80",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "2e63f828-7505-4c46-a756-9a03f570a027",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T15:13:50",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.127.102.80",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "2e63f828-7505-4c46-a756-9a03f570a027",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T15:14:50",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.127.102.80",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "2e63f828-7505-4c46-a756-9a03f570a027",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T12:18:32",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.64.91.97",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "21921657-0337-4026-aa36-42773e32420b",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T12:19:32",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.64.91.97",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "21921657-0337-4026-aa36-42773e32420b",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T12:20:32",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.64.91.97",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "21921657-0337-4026-aa36-42773e32420b",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T12:38:00",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.40.129.137",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "0bb8a6f9-38bf-4b03-9014-676afd7a115e",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T12:39:00",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.40.129.137",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "0bb8a6f9-38bf-4b03-9014-676afd7a115e",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T12:40:00",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.40.129.137",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "0bb8a6f9-38bf-4b03-9014-676afd7a115e",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T04:36:31",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.62.79.138",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "a161c254-8b8b-4475-9c0d-6f93ccd97044",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T04:37:31",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.62.79.138",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "a161c254-8b8b-4475-9c0d-6f93ccd97044",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T04:38:31",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.62.79.138",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "a161c254-8b8b-4475-9c0d-6f93ccd97044",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T11:48:10",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.185.38.175",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "4769cad2-bc10-4ebf-93e2-fc8580a54686",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T11:49:10",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.185.38.175",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "4769cad2-bc10-4ebf-93e2-fc8580a54686",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T11:50:10",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.185.38.175",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "4769cad2-bc10-4ebf-93e2-fc8580a54686",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T15:27:04",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.55.89.151",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "744d25e7-6a5a-41ce-835d-959fa97aba78",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T15:28:04",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.55.89.151",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "744d25e7-6a5a-41ce-835d-959fa97aba78",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T15:29:04",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.55.89.151",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "744d25e7-6a5a-41ce-835d-959fa97aba78",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T20:31:39",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.44.2.61",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "33d6b2d4-2d31-4034-b3f1-e12ce2402497",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T20:32:39",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.44.2.61",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "33d6b2d4-2d31-4034-b3f1-e12ce2402497",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T20:33:39",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.44.2.61",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "33d6b2d4-2d31-4034-b3f1-e12ce2402497",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T18:24:19",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.76.70.214",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "fd6c81e3-a6fb-4012-8791-6482f591df59",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T18:25:19",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.76.70.214",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "fd6c81e3-a6fb-4012-8791-6482f591df59",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T18:26:19",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.76.70.214",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "fd6c81e3-a6fb-4012-8791-6482f591df59",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T15:51:45",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.42.166.2",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "9645d40b-c3f7-4ff7-a85a-189b50d826b3",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T15:52:45",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.42.166.2",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "9645d40b-c3f7-4ff7-a85a-189b50d826b3",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T15:53:45",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.42.166.2",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "9645d40b-c3f7-4ff7-a85a-189b50d826b3",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T10:25:42",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.254.152.237",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "857855c8-802e-410b-95f2-121cd290c369",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T10:26:42",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.254.152.237",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "857855c8-802e-410b-95f2-121cd290c369",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T10:27:42",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.254.152.237",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "857855c8-802e-410b-95f2-121cd290c369",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T10:46:20",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.163.195.2",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "874e5161-2906-4a67-ad7d-07b0accedacc",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T10:47:20",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.163.195.2",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "874e5161-2906-4a67-ad7d-07b0accedacc",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T10:48:20",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.163.195.2",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "874e5161-2906-4a67-ad7d-07b0accedacc",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T08:37:19",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.59.37.165",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "809d56b1-b008-4975-b91e-3e30c5c781c0",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T08:38:19",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.59.37.165",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "809d56b1-b008-4975-b91e-3e30c5c781c0",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T08:39:19",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.59.37.165",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "809d56b1-b008-4975-b91e-3e30c5c781c0",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T10:39:09",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.46.207.195",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "3e042c5d-14a6-44ff-8938-2e37aca23df2",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T10:40:09",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.46.207.195",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "3e042c5d-14a6-44ff-8938-2e37aca23df2",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T10:41:09",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.46.207.195",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "3e042c5d-14a6-44ff-8938-2e37aca23df2",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T05:20:57",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.83.25.231",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "0584cd1e-98af-483c-92c4-d9faae03dd01",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T05:21:57",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.83.25.231",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "0584cd1e-98af-483c-92c4-d9faae03dd01",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T05:22:57",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.83.25.231",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "0584cd1e-98af-483c-92c4-d9faae03dd01",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T07:09:56",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.139.109.138",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "00bfde75-e22c-43b4-944a-bbb6e7abb612",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T07:10:56",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.139.109.138",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "00bfde75-e22c-43b4-944a-bbb6e7abb612",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T07:11:56",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.139.109.138",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "00bfde75-e22c-43b4-944a-bbb6e7abb612",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T19:10:37",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.12.235.213",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "0be37183-c8ed-4d16-80c7-64dc5b611776",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T19:11:37",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.12.235.213",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "0be37183-c8ed-4d16-80c7-64dc5b611776",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T19:12:37",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.12.235.213",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "0be37183-c8ed-4d16-80c7-64dc5b611776",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T02:51:37",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.121.168.119",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "8647babe-5bdf-4344-9828-b5a5deb6291a",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T02:52:37",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.121.168.119",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "8647babe-5bdf-4344-9828-b5a5deb6291a",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-18T02:53:37",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.121.168.119",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "8647babe-5bdf-4344-9828-b5a5deb6291a",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T01:40:21",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.76.76.8",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "f57d114b-02c4-40c6-bc66-7b7b04dddaf7",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T01:41:21",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.76.76.8",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "f57d114b-02c4-40c6-bc66-7b7b04dddaf7",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T01:42:21",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.76.76.8",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "f57d114b-02c4-40c6-bc66-7b7b04dddaf7",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T18:44:33",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.114.157.48",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "8b459e89-e6e6-4957-8861-afff5353ac5d",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T18:45:33",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.114.157.48",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "8b459e89-e6e6-4957-8861-afff5353ac5d",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-19T18:46:33",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.114.157.48",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "8b459e89-e6e6-4957-8861-afff5353ac5d",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T13:22:10",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.47.55.58",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "ebd25846-220a-4701-a93a-2bc451dd65bb",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T13:23:10",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.47.55.58",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "ebd25846-220a-4701-a93a-2bc451dd65bb",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T13:24:10",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.47.55.58",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "ebd25846-220a-4701-a93a-2bc451dd65bb",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T03:04:22",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.0.75.21",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "a7e3fdec-0a6b-47de-af96-67c30338727b",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T03:05:22",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.0.75.21",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "a7e3fdec-0a6b-47de-af96-67c30338727b",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T03:06:22",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.0.75.21",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "a7e3fdec-0a6b-47de-af96-67c30338727b",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T09:19:48",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.63.78.130",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "fa0d0aba-7782-4c5c-8686-9656a54cbd40",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T09:20:48",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.63.78.130",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "fa0d0aba-7782-4c5c-8686-9656a54cbd40",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-16T09:21:48",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "dr_smith",
+        "user_role": "DOCTOR",
+        "department": "Cardiology",
+        "source_ip": "10.63.78.130",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "fa0d0aba-7782-4c5c-8686-9656a54cbd40",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T16:40:13",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.57.63.26",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "113149b8-9bed-4aa1-97d5-d62f832fab92",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T16:41:13",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.57.63.26",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "113149b8-9bed-4aa1-97d5-d62f832fab92",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-20T16:42:13",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.57.63.26",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "113149b8-9bed-4aa1-97d5-d62f832fab92",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T15:57:00",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.16.144.45",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "e8754ce5-b2bd-4f0c-a57d-42bad8411427",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T15:58:00",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.16.144.45",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "e8754ce5-b2bd-4f0c-a57d-42bad8411427",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-21T15:59:00",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "lab_taylor",
+        "user_role": "LAB_TECHNICIAN",
+        "department": "Laboratory",
+        "source_ip": "10.16.144.45",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "e8754ce5-b2bd-4f0c-a57d-42bad8411427",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T03:50:08",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.131.146.205",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "19f32f29-1c0c-434d-b221-4cd69e84af33",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T03:51:08",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.131.146.205",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "19f32f29-1c0c-434d-b221-4cd69e84af33",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-22T03:52:08",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.131.146.205",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "19f32f29-1c0c-434d-b221-4cd69e84af33",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T16:29:46",
+        "source": "VPN",
+        "event_type": "VPN_LOGIN",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.37.243.134",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "User initiated VPN authentication.",
+        "extra": {
+            "session_id": "b161be16-e489-43fd-bb87-66d93a7a8cab",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T16:30:46",
+        "source": "VPN",
+        "event_type": "VPN_CONNECTED",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.37.243.134",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN tunnel established successfully.",
+        "extra": {
+            "session_id": "b161be16-e489-43fd-bb87-66d93a7a8cab",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    },
+    {
+        "timestamp": "2026-07-17T16:31:46",
+        "source": "VPN",
+        "event_type": "VPN_LOGOUT",
+        "user": "nurse_adams",
+        "user_role": "NURSE",
+        "department": "ICU",
+        "source_ip": "10.37.243.134",
+        "destination_ip": "10.0.0.5",
+        "severity": "LOW",
+        "status": "SUCCESS",
+        "description": "VPN session terminated.",
+        "extra": {
+            "session_id": "b161be16-e489-43fd-bb87-66d93a7a8cab",
+            "vpn_gateway": "VPN-GW-01"
+        }
+    }
+]

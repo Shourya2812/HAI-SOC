@@ -1,47 +1,33 @@
-# ==========================
-# Environment Files
-# ==========================
-.env
-backend/.env
-frontend/.env
-
-# ==========================
 # Python
-# ==========================
-backend/.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual Environment
 .venv/
 venv/
-__pycache__/
-*.pyc
-.pytest_cache/
+env/
 
-# ==========================
+# Environment variables
+.env
+
 # Node
-# ==========================
 node_modules/
-dist/
 
-# ==========================
-# Logs
-# ==========================
-*.log
-
-# ==========================
-# Dataset
-# ==========================
-datasets/raw/
-
-# ==========================
 # IDE
-# ==========================
 .vscode/
 .idea/
 
-# ==========================
 # OS
-# ==========================
 .DS_Store
 Thumbs.db
 
-# Generated datasets
-datasets/processed/
+# ML Artifacts
+ml/artifacts/*
+!ml/artifacts/.gitkeep
+
+# Python cache
+.pytest_cache/
+
+# Logs
+*.log

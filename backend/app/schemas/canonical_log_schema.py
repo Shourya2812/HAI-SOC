@@ -3,7 +3,7 @@ from typing import Any
 
 from pydantic import BaseModel, Field, ConfigDict
 
-from app.models.log_enums import (
+from backend.app.models.log_enums import (
     EventSeverity,
     EventStatus,
     LogSource,

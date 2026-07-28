@@ -6,12 +6,12 @@ Authentication service for HAI-SOC.
 
 from datetime import datetime, UTC
 
-from app.database.collections import users_collection
-from app.schemas.auth_schema import RegisterResponse
-from app.models.user import User
-from app.schemas.user_schema import CreateUserRequest
-from app.schemas.auth_schema import LoginRequest, TokenResponse
-from app.utils.security import (
+from backend.app.database.collections import users_collection
+from backend.app.schemas.auth_schema import RegisterResponse
+from backend.app.models.user import User
+from backend.app.schemas.user_schema import CreateUserRequest
+from backend.app.schemas.auth_schema import LoginRequest, TokenResponse
+from backend.app.utils.security import (
     hash_password,
     verify_password,
     create_access_token,

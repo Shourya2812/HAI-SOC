@@ -7,7 +7,7 @@ Creates and manages the MongoDB connection used across HAI-SOC.
 from pymongo import MongoClient
 from pymongo.database import Database
 
-from app.core.config import settings
+from backend.app.core.config import settings
 
 
 class MongoDB:

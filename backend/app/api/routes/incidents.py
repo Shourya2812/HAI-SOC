@@ -6,17 +6,17 @@ REST endpoints for healthcare security incidents.
 
 from fastapi import APIRouter, HTTPException
 
-from app.schemas.incident_schema import (
+from backend.app.schemas.incident_schema import (
     CreateIncidentRequest,
     UpdateIncidentRequest,
 )
 
-from app.services.incident_service import IncidentService
+from backend.app.services.incident_service import IncidentService
 
 from fastapi import Depends
 
-from app.api.dependencies import require_role
-from app.models.enums import UserRole
+from backend.app.api.dependencies import require_role
+from backend.app.models.enums import UserRole
 
 router = APIRouter(
     prefix="/incidents",

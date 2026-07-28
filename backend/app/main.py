@@ -8,8 +8,8 @@ from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
 
-from app.api.router import api_router
-from app.database.connection import MongoDB
+from backend.app.api.router import api_router
+from backend.app.database.connection import MongoDB
 
 
 @asynccontextmanager

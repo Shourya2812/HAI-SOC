@@ -2,7 +2,7 @@ from datetime import datetime
 
 from pydantic import BaseModel, ConfigDict
 
-from app.models.enums import Severity
+from backend.app.models.enums import Severity
 
 
 class Anomaly(BaseModel):

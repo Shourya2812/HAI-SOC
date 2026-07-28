@@ -6,11 +6,11 @@ Authentication routes for HAI-SOC.
 
 from fastapi import APIRouter, HTTPException, Depends
 
-from app.api.dependencies import get_current_user
-from app.schemas.user_schema import CreateUserRequest
-from app.services.auth_service import AuthService
+from backend.app.api.dependencies import get_current_user
+from backend.app.schemas.user_schema import CreateUserRequest
+from backend.app.services.auth_service import AuthService
 from fastapi.security import OAuth2PasswordRequestForm
-from app.schemas.auth_schema import (
+from backend.app.schemas.auth_schema import (
     RegisterResponse,
     TokenResponse,
     CurrentUserResponse,

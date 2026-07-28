@@ -8,13 +8,9 @@ from datetime import datetime, UTC
 
 from bson import ObjectId
 
-from app.database.collections import logs_collection
-
-from app.models.enums import Severity
-
-from app.models.log import Log
-
-from app.schemas.log_schema import (
+from backend.app.database.collections import logs_collection
+from backend.app.models.log import Log
+from backend.app.schemas.log_schema import (
     CreateLogRequest,
     UpdateLogRequest,
     LogResponse,
@@ -22,6 +18,9 @@ from app.schemas.log_schema import (
 
 
 class LogService:
+    """
+    Service layer for CRUD operations on healthcare security logs.
+    """
 
     @staticmethod
     def create_log(request: CreateLogRequest) -> LogResponse:
@@ -30,7 +29,7 @@ class LogService:
         """
 
         log = Log(
-            timestamp=datetime.now(UTC),
+            timestamp=request.timestamp or datetime.now(UTC),
             source=request.source,
             destination=request.destination,
             user_id=request.user_id,
@@ -38,7 +37,7 @@ class LogService:
             device=request.device,
             department=request.department,
             action=request.action,
-            severity=Severity.LOW,
+            severity=request.severity,
             protocol=request.protocol,
             port=request.port,
             message=request.message,
@@ -54,32 +53,34 @@ class LogService:
         )
 
     @staticmethod
-    def get_log(log_id: str):
+    def get_log(log_id: str) -> LogResponse | None:
+        """
+        Retrieve a single log by ID.
+        """
 
         document = logs_collection.find_one(
-            {
-                "_id": ObjectId(log_id)
-            }
+            {"_id": ObjectId(log_id)}
         )
 
         if document is None:
             return None
 
         document["id"] = str(document["_id"])
-
         document.pop("_id")
 
         return LogResponse(**document)
 
     @staticmethod
-    def get_logs():
+    def get_logs() -> list[LogResponse]:
+        """
+        Retrieve all logs.
+        """
 
         logs = []
 
         for document in logs_collection.find():
 
             document["id"] = str(document["_id"])
-
             document.pop("_id")
 
             logs.append(
@@ -89,30 +90,33 @@ class LogService:
         return logs
 
     @staticmethod
-    def delete_log(log_id: str):
+    def delete_log(log_id: str) -> bool:
+        """
+        Delete a log by ID.
+        """
 
         result = logs_collection.delete_one(
-            {
-                "_id": ObjectId(log_id)
-            }
+            {"_id": ObjectId(log_id)}
         )
 
         return result.deleted_count == 1
 
     @staticmethod
-    def update_log(log_id: str, request: UpdateLogRequest):
+    def update_log(
+        log_id: str,
+        request: UpdateLogRequest,
+    ) -> LogResponse | None:
+        """
+        Update mutable fields of a log.
+        """
 
         update_data = request.model_dump(
             exclude_none=True
         )
 
         logs_collection.update_one(
-            {
-                "_id": ObjectId(log_id)
-            },
-            {
-                "$set": update_data
-            }
+            {"_id": ObjectId(log_id)},
+            {"$set": update_data},
         )
 
         return LogService.get_log(log_id)

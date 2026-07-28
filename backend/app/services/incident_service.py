@@ -6,11 +6,11 @@ Business logic for healthcare security incidents.
 
 from bson import ObjectId
 
-from app.database.collections import incidents_collection
+from backend.app.database.collections import incidents_collection
 
-from app.models.incident import Incident
+from backend.app.models.incident import Incident
 
-from app.schemas.incident_schema import (
+from backend.app.schemas.incident_schema import (
     CreateIncidentRequest,
     UpdateIncidentRequest,
     IncidentResponse,

@@ -2,7 +2,7 @@
 Centralized MongoDB collection references used throughout HAI-SOC.
 """
 
-from app.database.connection import MongoDB
+from backend.app.database.connection import MongoDB
 
 db = MongoDB.get_database()
 

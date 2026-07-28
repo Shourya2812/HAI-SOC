@@ -1,7 +1,7 @@
 from datetime import datetime
 
-from app.schemas.canonical_log_schema import CanonicalLog
-from app.models.log_enums import (
+from backend.app.schemas.canonical_log_schema import CanonicalLog
+from backend.app.models.log_enums import (
     LogSource,
     EventSeverity,
     EventStatus,

@@ -3,7 +3,7 @@ from typing import List, Dict, Any
 
 from pydantic import BaseModel, Field, ConfigDict
 
-from app.models.enums import IncidentStatus, RiskLevel
+from backend.app.models.enums import IncidentStatus, RiskLevel
 
 
 class Incident(BaseModel):

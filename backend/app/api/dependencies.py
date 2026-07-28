@@ -3,9 +3,9 @@ from typing import Any
 from fastapi import Depends, HTTPException
 from fastapi.security import OAuth2PasswordBearer
 
-from app.database.collections import users_collection
-from app.models.enums import UserRole
-from app.utils.security import decode_access_token
+from backend.app.database.collections import users_collection
+from backend.app.models.enums import UserRole
+from backend.app.utils.security import decode_access_token
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/auth/login")
 

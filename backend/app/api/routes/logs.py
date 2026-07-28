@@ -6,17 +6,21 @@ REST endpoints for healthcare security logs.
 
 from fastapi import APIRouter, HTTPException
 
-from app.schemas.log_schema import (
+from backend.app.schemas.log_schema import (
     CreateLogRequest,
     UpdateLogRequest,
+    LogResponse,
+    IngestionResponse,
 )
 
-from app.services.log_service import LogService
+from backend.app.services.ingestion_service import IngestionService
+from backend.app.services.log_service import LogService
 
 from fastapi import Depends
+from fastapi import APIRouter, status
 
-from app.api.dependencies import require_role
-from app.models.enums import UserRole
+from backend.app.api.dependencies import require_role
+from backend.app.models.enums import UserRole
 
 router = APIRouter(
     prefix="/logs",
@@ -24,10 +28,13 @@ router = APIRouter(
 )
 
 
-@router.post("/")
+@router.post(
+    "/",
+    response_model=IngestionResponse,
+    status_code=status.HTTP_201_CREATED,
+)
 def create_log(request: CreateLogRequest):
-    return LogService.create_log(request)
-
+    return IngestionService.ingest_log(request)
 
 @router.get("/")
 def get_logs():

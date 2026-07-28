@@ -3,7 +3,7 @@ from typing import Optional, Dict, Any
 
 from pydantic import BaseModel, Field, ConfigDict
 
-from app.models.enums import Severity, Outcome, UserRole
+from backend.app.models.enums import Severity, Outcome, UserRole
 
 
 class Log(BaseModel):

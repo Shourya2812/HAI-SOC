@@ -6,7 +6,7 @@ collections and indexes.
 
 from pymongo import ASCENDING, DESCENDING
 
-from app.database.connection import MongoDB
+from backend.app.database.connection import MongoDB
 
 
 def init_collections(db):

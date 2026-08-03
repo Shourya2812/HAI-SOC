@@ -7,12 +7,10 @@ from backend.app.database.connection import MongoDB
 db = MongoDB.get_database()
 
 # Collections
-logs_collection = db["logs"]
+users_collection = db["users"]
 
-anomaly_scores_collection = db["anomaly_scores"]
+logs_collection = db["logs"]
 
 incidents_collection = db["incidents"]
 
-users_collection = db["users"]
-
-audit_logs_collection = db["audit_logs"]
+anomaly_scores_collection = db["anomaly_scores"]

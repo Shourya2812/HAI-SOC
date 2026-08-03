@@ -40,7 +40,7 @@ logger = logging.getLogger("xgboost_pipeline")
 @dataclass
 class XGBConfig:
     model_dir: str = "ml/artifacts"
-    model_name: str = "xgboost_v1"
+    detector: str = "xgboost_v1"
 
     n_estimators: int = 200
     max_depth: int = 5
@@ -118,14 +118,14 @@ def save_artifacts(model, fe, metrics, predictions, config):
     model_dir = Path(config.model_dir)
     model_dir.mkdir(parents=True, exist_ok=True)
 
-    joblib.dump(model, model_dir / f"{config.model_name}.joblib")
-    fe.save(model_dir / f"{config.model_name}_features.joblib")
+    joblib.dump(model, model_dir / f"{config.detector}.joblib")
+    fe.save(model_dir / f"{config.detector}_features.joblib")
 
-    with open(model_dir / f"{config.model_name}_metrics.json", "w") as f:
+    with open(model_dir / f"{config.detector}_metrics.json", "w") as f:
         json.dump(metrics, f, indent=2)
 
     predictions.to_csv(
-        model_dir / f"{config.model_name}_predictions.csv",
+        model_dir / f"{config.detector}_predictions.csv",
         index=False,
     )
 

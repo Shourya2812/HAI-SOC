@@ -46,7 +46,7 @@ logger = logging.getLogger("iforest_pipeline")
 class IForestConfig:
     data_path: str = str(ML_DATASET)
     model_dir: str = "ml/artifacts"
-    model_name: str = "isolation_forest_v1"
+    detector: str = "isolation_forest_v1"
 
     categorical_cols: list = field(default_factory=lambda: [
         "source", "event_type", "role", "department", "asset", "protocol",
@@ -244,10 +244,10 @@ def save_artifacts(model: IsolationForest, feature_engineer: FeatureEngineer,
     model_dir = Path(config.model_dir)
     model_dir.mkdir(parents=True, exist_ok=True)
 
-    joblib.dump(model, model_dir / f"{config.model_name}.joblib")
-    feature_engineer.save(model_dir / f"{config.model_name}_features.joblib")
+    joblib.dump(model, model_dir / f"{config.detector}.joblib")
+    feature_engineer.save(model_dir / f"{config.detector}_features.joblib")
 
-    with open(model_dir / f"{config.model_name}_metrics.json", "w") as f:
+    with open(model_dir / f"{config.detector}_metrics.json", "w") as f:
         json.dump(metrics, f, indent=2, default=str)
 
     logger.info(f"Artifacts saved to {model_dir}/")
@@ -255,8 +255,8 @@ def save_artifacts(model: IsolationForest, feature_engineer: FeatureEngineer,
 
 def load_artifacts(config: IForestConfig):
     model_dir = Path(config.model_dir)
-    model = joblib.load(model_dir / f"{config.model_name}.joblib")
-    feature_engineer = FeatureEngineer.load(model_dir / f"{config.model_name}_features.joblib")
+    model = joblib.load(model_dir / f"{config.detector}.joblib")
+    feature_engineer = FeatureEngineer.load(model_dir / f"{config.detector}_features.joblib")
     return model, feature_engineer
 
 

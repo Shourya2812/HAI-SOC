@@ -24,12 +24,12 @@ class ModelLoader:
     _cache = {}
 
     @classmethod
-    def load_model(cls, model_name: str):
+    def load_model(cls, detector: str):
         """
         Load a trained model and its feature engineering artifacts.
 
         Args:
-            model_name:
+            detector:
                 Example:
                     xgboost_v1
                     isolation_forest_v1
@@ -42,20 +42,20 @@ class ModelLoader:
                 (model, feature_engineer)
         """
 
-        if model_name not in cls._cache:
+        if detector not in cls._cache:
 
-            model_path = ARTIFACTS_DIR / f"{model_name}.joblib"
-            feature_path = ARTIFACTS_DIR / f"{model_name}_features.joblib"
+            model_path = ARTIFACTS_DIR / f"{detector}.joblib"
+            feature_path = ARTIFACTS_DIR / f"{detector}_features.joblib"
 
             model = joblib.load(model_path)
             feature_engineer = FeatureEngineer.load(feature_path)
 
-            cls._cache[model_name] = (
+            cls._cache[detector] = (
                 model,
                 feature_engineer,
             )
 
-        return cls._cache[model_name]
+        return cls._cache[detector]
 
     @classmethod
     def clear_cache(cls):

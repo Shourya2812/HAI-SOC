@@ -9,6 +9,14 @@ from pydantic import BaseModel, Field, ConfigDict
 
 from backend.app.models.enums import Severity, Outcome, UserRole
 
+from backend.app.schemas.anomaly_schema import (
+    AnomalyScoreResponse,
+)
+
+from backend.app.schemas.incident_schema import (
+    IncidentResponse,
+)
+
 
 class CreateLogRequest(BaseModel):
     source: str
@@ -95,8 +103,11 @@ class PredictionResponse(BaseModel):
     """
 
     model: str
+
     prediction: int
+
     is_anomaly: bool
+
     score: float
 
 
@@ -106,4 +117,9 @@ class IngestionResponse(BaseModel):
     """
 
     log: LogResponse
+
     prediction: PredictionResponse
+
+    anomaly_record: AnomalyScoreResponse
+
+    incident: IncidentResponse | None = None

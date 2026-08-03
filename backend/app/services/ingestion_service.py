@@ -2,83 +2,101 @@
 backend/app/services/ingestion_service.py
 
 Coordinates the complete log ingestion workflow.
-This service orchestrates log persistence, ML prediction,
-and incident generation.
 """
 
 from backend.app.schemas.log_schema import (
     CreateLogRequest,
     LogResponse,
-    PredictionResponse,
-    IngestionResponse,
 )
 
 from backend.app.services.log_service import LogService
+from backend.app.services.anomaly_service import AnomalyService
+from backend.app.services.incident_service import IncidentService
+
 from ml.models.predict import Predictor
 
 
 class IngestionService:
     """
-    Orchestrates the end-to-end ingestion pipeline.
+    Orchestrates the complete log ingestion workflow.
+
+    Workflow:
+
+        Client
+            │
+            ▼
+        Validate
+            │
+            ▼
+        Store Log
+            │
+            ▼
+        ML Prediction
+            │
+            ▼
+        Save Prediction
+            │
+            ▼
+        Create Incident (if anomaly)
+            │
+            ▼
+        Return Response
     """
 
     @staticmethod
-    def ingest_log(request: CreateLogRequest) -> IngestionResponse:
-        """
-        Main entry point for log ingestion.
+    def ingest_log(request: CreateLogRequest):
 
-        Workflow:
-            Client
-                ↓
-            Validate (Pydantic)
-                ↓
-            Store Log
-                ↓
-            Build Features
-                ↓
-            ML Prediction
-                ↓
-            Return Response
-        """
+        # --------------------------------------------------
+        # Step 1: Store Log
+        # --------------------------------------------------
 
-        # Save log to MongoDB
-        created_log = LogService.create_log(request)
+        created_log: LogResponse = LogService.create_log(request)
 
-        # Run ML prediction
+        # --------------------------------------------------
+        # Step 2: Run ML Prediction
+        # --------------------------------------------------
+
         prediction = Predictor.predict(
             created_log.model_dump()
         )
 
-        return IngestionResponse(
-            log=created_log,
-            prediction=PredictionResponse(**prediction),
+        # --------------------------------------------------
+        # Step 3: Save Prediction
+        # --------------------------------------------------
+
+        anomaly_record = AnomalyService.save_prediction(
+            log_id=created_log.id,
+            detector=prediction["model"],
+            prediction=prediction["prediction"],
+            anomaly_score=prediction["score"],
         )
 
-    @staticmethod
-    def run_ml_pipeline(log: LogResponse):
-        """
-        Placeholder for ML prediction.
+        # --------------------------------------------------
+        # Step 4: Create Incident (Only if anomaly)
+        # --------------------------------------------------
 
-        Future implementation:
-            - Feature Engineering
-            - Load trained model
-            - Predict anomaly score
-            - Store prediction
-        """
-        raise NotImplementedError("ML pipeline not implemented yet.")
+        incident = None
 
-    @staticmethod
-    def create_incident_if_needed(
-        log: LogResponse,
-        prediction: PredictionResponse,
-    ):
-        """
-        Placeholder for automatic incident creation.
+        if prediction["is_anomaly"]:
 
-        Future implementation:
-            - Compare anomaly score with threshold
-            - Create incident
-            - Store incident
-            - Notify SOC
-        """
-        raise NotImplementedError("Incident creation not implemented yet.")
+            incident = IncidentService.create_from_prediction(
+                log_id=created_log.id,
+                detector=prediction["model"],
+                anomaly_score=prediction["score"],
+                title="Healthcare Security Anomaly",
+                description=(
+                    f"An anomalous event was detected by "
+                    f"{prediction['model']}."
+                ),
+            )
+
+        # --------------------------------------------------
+        # Step 5: Return Everything
+        # --------------------------------------------------
+
+        return {
+            "log": created_log,
+            "prediction": prediction,
+            "anomaly_record": anomaly_record,
+            "incident": incident,
+        }

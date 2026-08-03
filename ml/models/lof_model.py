@@ -38,7 +38,7 @@ logger = logging.getLogger("lof_pipeline")
 @dataclass
 class LOFConfig:
     model_dir: str = "ml/artifacts"
-    model_name: str = "lof_v1"
+    detector: str = "lof_v1"
 
     n_neighbors: int = 20
     contamination: Optional[float] = 0.10
@@ -73,17 +73,17 @@ def save_artifacts(model,
     model_dir = Path(config.model_dir)
     model_dir.mkdir(parents=True, exist_ok=True)
 
-    joblib.dump(model, model_dir / f"{config.model_name}.joblib")
+    joblib.dump(model, model_dir / f"{config.detector}.joblib")
 
     feature_engineer.save(
-        model_dir / f"{config.model_name}_features.joblib"
+        model_dir / f"{config.detector}_features.joblib"
     )
 
-    with open(model_dir / f"{config.model_name}_metrics.json", "w") as f:
+    with open(model_dir / f"{config.detector}_metrics.json", "w") as f:
         json.dump(metrics, f, indent=2)
 
     predictions.to_csv(
-        model_dir / f"{config.model_name}_predictions.csv",
+        model_dir / f"{config.detector}_predictions.csv",
         index=False
     )
 

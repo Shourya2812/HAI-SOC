@@ -1,30 +1,28 @@
+"""
+backend/app/models/anomaly.py
+
+Stores every prediction produced by an ML model.
+"""
+
 from datetime import datetime
 
 from pydantic import BaseModel, ConfigDict
 
-from backend.app.models.enums import Severity
 
-
-class Anomaly(BaseModel):
+class AnomalyScore(BaseModel):
     """
-    ML anomaly score for a healthcare log.
+    ML prediction associated with a single log.
     """
 
     log_id: str
 
+    detector: str
+
+    prediction: int
+
     anomaly_score: float
 
-    risk_score: float
-
-    confidence: float
-
-    severity: Severity
-
-    model_name: str
-
-    model_version: str
-
-    scored_at: datetime
+    created_at: datetime
 
     model_config = ConfigDict(
         extra="forbid"

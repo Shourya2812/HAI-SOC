@@ -32,7 +32,7 @@ logger = logging.getLogger("ocsvm_pipeline")
 @dataclass
 class OCSVMConfig:
     model_dir: str = "ml/artifacts"
-    model_name: str = "ocsvm_v1"
+    detector: str = "ocsvm_v1"
 
     kernel: str = "rbf"
     gamma: str = "scale"
@@ -70,17 +70,17 @@ def save_artifacts(model,
     model_dir = Path(config.model_dir)
     model_dir.mkdir(parents=True, exist_ok=True)
 
-    joblib.dump(model, model_dir / f"{config.model_name}.joblib")
+    joblib.dump(model, model_dir / f"{config.detector}.joblib")
 
     feature_engineer.save(
-        model_dir / f"{config.model_name}_features.joblib"
+        model_dir / f"{config.detector}_features.joblib"
     )
 
-    with open(model_dir / f"{config.model_name}_metrics.json", "w") as f:
+    with open(model_dir / f"{config.detector}_metrics.json", "w") as f:
         json.dump(metrics, f, indent=2)
 
     predictions.to_csv(
-        model_dir / f"{config.model_name}_predictions.csv",
+        model_dir / f"{config.detector}_predictions.csv",
         index=False
     )
 

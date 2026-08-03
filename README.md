@@ -1,109 +1,166 @@
-# HAI-SOC — Healthcare AI Security Operations Platform
+# 🏥 HAI-SOC
 
-An AI-powered Security Operations Center platform purpose-built for healthcare environments. It ingests and normalizes security logs from EHRs, medical IoT devices, cloud services, authentication systems, and network infrastructure; detects anomalous activity using unsupervised machine learning; retrieves relevant cybersecurity and compliance knowledge through Retrieval-Augmented Generation; and uses a multi-agent LLM copilot to generate explainable, analyst-ready incident reports, threat assessments, and remediation guidance.
+### Healthcare AI Security Operations Platform
 
-Traditional SIEM tools lean on rule-based detection — high false-positive rates, no contextual understanding, and heavy manual investigation. HAI-SOC replaces that with ML-driven anomaly scoring plus a grounded GenAI layer that explains *why* an event matters, maps it to MITRE ATT&CK, assesses HIPAA impact, and drafts a remediation-ready report — not just a raw alert.
-
-**Status:** Phase 1 — Architecture & Planning
+> An AI-powered SOC platform that replaces rule-based healthcare log monitoring with ML-driven anomaly detection, RAG-grounded compliance context, and a GenAI incident-reporting copilot.
 
 ---
 
-## What it does
+## Overview
 
-1. **Ingests** logs from EHR access, IoT telemetry, VPN/auth, and cloud audit sources into a common schema
-2. **Detects** anomalies with Isolation Forest, Local Outlier Factor, and Autoencoder models
-3. **Orchestrates** each flagged incident through a LangGraph agent graph that runs in parallel:
-   - MITRE ATT&CK technique mapping
-   - HIPAA/NIST compliance retrieval (RAG over a curated knowledge base)
-   - Historical incident search
-   - Asset context lookup
-4. **Generates** a synthesized incident report — root cause, affected assets, risk level, HIPAA impact, and containment/remediation steps — with every claim traceable to a retrieved source
-5. **Serves** it all through a role-based dashboard for SOC analysts, compliance officers, and admins
+Healthcare organizations generate huge volumes of security logs across EHRs, IoT devices, cloud services, and network infrastructure — far more than analysts can manually triage. Traditional rule-based SIEMs respond with high false-positive rates and no behavioral context.
+
+HAI-SOC ingests and normalizes multi-source healthcare security logs, scores them for anomalousness using unsupervised machine learning, and (in progress) retrieves relevant HIPAA/NIST/MITRE ATT&CK context via RAG so a GenAI copilot can generate explainable, analyst-ready incident reports — not just a raw anomaly score.
+
+## Status
+
+**Phase: ML anomaly detection benchmarking complete → moving into RAG + GenAI copilot**
+
+| Area | Status |
+|---|---|
+| Backend API (FastAPI, MongoDB, CRUD) | ✅ Done |
+| Auth, RBAC, global exceptions, audit logs | ✅ Done |
+| Synthetic healthcare security dataset + 5-attack injector | ✅ Done |
+| ML anomaly detection — 5 models trained & benchmarked | ✅ Done |
+| Data leakage investigation & fix (`severity_score`) | ✅ Done |
+| Correlated attack sequences (multi-stage) | 🚧 Planned |
+| RAG knowledge layer (HIPAA/NIST/MITRE) | 🚧 Planned |
+| GenAI incident copilot (LangGraph agents) | 🚧 Planned |
+| React dashboard | 🚧 Planned |
+| Kafka streaming ingestion | 🚧 Planned |
+| Kubernetes + AWS deployment | 🚧 Planned |
 
 ## Architecture
 
+```text
+Healthcare log sources (EHR, VPN, Firewall, Network, IAM)
+        │
+        ▼
+Ingestion & normalization (FastAPI → MongoDB)
+        │
+        ▼
+Feature engineering (categorical encoding, time features, scaling)
+        │
+        ▼
+ML anomaly detection (Isolation Forest / LOF / One-Class SVM / Autoencoder / XGBoost)
+        │
+        ▼
+Prediction API  ──▶  [planned] Alert orchestrator (LangGraph)
+                            │
+                            ├── MITRE ATT&CK mapping
+                            ├── Compliance retrieval (RAG — HIPAA/NIST)
+                            ├── Historical incident search
+                            └── Asset context
+                            │
+                            ▼
+                     GenAI incident report
 ```
-Log sources (EHR, IoT, auth, cloud, network)
-        │
-        ▼
-Ingestion pipeline (Wazuh → Kafka → parse/normalize/clean/feature-engineer → MongoDB)
-        │
-        ▼
-ML anomaly detection (Isolation Forest / LOF / Autoencoder → score, risk, confidence, severity)
-        │
-        ▼
-Alert orchestrator (LangGraph) ── fans out to ──┬── MITRE ATT&CK mapping
-                                                  ├── Compliance retrieval (RAG / Qdrant)
-                                                  ├── Historical incident search
-                                                  └── Asset context
-        │
-        ▼
-Report generator (synthesizes agent outputs into one grounded incident report)
-        │
-        ▼
-Backend API (FastAPI) → Frontend dashboard (React + TypeScript + Tailwind)
-```
 
-Full detail — module responsibilities, data flow narrative, non-functional requirements, and decision log — lives in [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md).
+## Machine Learning — Model Benchmark
 
-## Tech stack
+Five models were trained on an identical feature set and chronological train/test split for a fair comparison across unsupervised and supervised approaches:
 
-| Layer | Tech |
+| Model | Type | Precision | Recall | F1 | ROC-AUC | FPR |
+|---|---|---|---|---|---|---|
+| XGBoost* | Supervised | 1.000 | 1.000 | 1.000 | 1.000 | 0.000 |
+| Isolation Forest | Unsupervised | 0.944 | 0.531 | 0.680 | 0.900 | 0.003 |
+| AutoEncoder | Unsupervised | 0.850 | 0.531 | 0.654 | 0.866 | 0.008 |
+| One-Class SVM | Unsupervised | 0.875 | 0.438 | 0.583 | 0.810 | 0.006 |
+| LOF | Unsupervised | 0.192 | 0.313 | 0.238 | 0.740 | 0.117 |
+
+*XGBoost's initial perfect score was investigated and traced to `severity_score` acting as a near-deterministic label proxy (a SIEM-assigned field, not observed behavior) — a genuine data leakage finding, since fixed in the feature engineering pipeline. See `docs/ARCHITECTURE.md` for the full write-up.
+
+**Key finding:** Isolation Forest leads the unsupervised field, but all models struggle on `INSIDER_THREAT` — a volume/pattern-based attack with no single-event signature, which point-anomaly models structurally can't catch without session-level aggregated features. This is the direction the next iteration of the attack dataset and feature set is heading.
+
+## Tech Stack
+
+| Layer | Technology |
 |---|---|
-| Backend | Python, FastAPI |
-| ML | Scikit-learn, PyOD, XGBoost |
-| GenAI orchestration | LangChain, LangGraph |
-| Embeddings / Vector DB | Sentence Transformers, Qdrant |
+| Backend | FastAPI |
 | Database | MongoDB |
-| Cache | Redis |
-| Message queue | Apache Kafka |
-| Frontend | React, TypeScript, Tailwind CSS, Chart.js |
-| Infra | Docker, Kubernetes, Helm |
-| Cloud | AWS (EKS, RDS, S3, ECR, IAM, CloudWatch) |
-| Monitoring | Prometheus, Grafana |
-| CI/CD | GitHub Actions |
+| Vector DB | Qdrant *(planned)* |
+| ML | Scikit-learn, PyOD, XGBoost |
+| GenAI | LangChain + LangGraph *(planned)* |
+| LLM | API-based (Anthropic) *(planned)* |
+| Frontend | React + TypeScript + Tailwind *(planned)* |
+| Auth | JWT + RBAC |
+| Cache | Redis *(planned)* |
+| Streaming | Kafka *(planned)* |
+| Deployment | Docker + Kubernetes *(planned)* |
+| Cloud | AWS *(planned)* |
 
-## Repository structure
+## Project Structure
 
-```
+```text
 HAI-SOC/
-├── backend/            # FastAPI app: api/, auth/, services/, models/, database/
-├── frontend/            # React + TypeScript dashboard
-├── ml/                  # preprocessing/, training/, inference/, evaluation/
-├── rag/                 # ingestion/, embeddings/, retrieval/, prompts/
-├── datasets/            # normalized/simulated healthcare security logs
-├── knowledge_base/      # HIPAA, NIST, MITRE ATT&CK, runbooks (source docs for RAG)
-├── deployment/          # docker/, kubernetes/, helm/
-├── monitoring/          # Prometheus + Grafana configs
-├── docs/                # ARCHITECTURE.md and other write-ups
-├── tests/
-└── .github/workflows/   # CI/CD pipelines
+├── backend/          FastAPI app, models, CRUD, auth, RBAC, audit logs
+├── frontend/          React + TypeScript dashboard (planned)
+├── ml/                config, feature engineering, evaluation, utils
+│   ├── models/        isolation_forest, lof, one_class_svm, autoencoder, xgboost
+│   ├── training/       comparison & diagnostic scripts
+│   └── artifacts/      trained models + metrics (gitignored where large)
+├── datasets/
+│   ├── generators/     ehr_log_generator.py, attack_injector.py
+│   └── processed/      ml_dataset.csv
+├── rag/                RAG ingestion, embeddings, retrieval (planned)
+├── knowledge_base/     HIPAA/NIST/MITRE reference docs (planned)
+├── deployment/          Docker, Kubernetes, Helm
+├── monitoring/          Prometheus, Grafana
+├── docs/                ARCHITECTURE.md — full design & decision log
+└── tests/
 ```
+
+## API
+
+| Method | Endpoint | Description |
+|---|---|---|
+| POST | `/logs` | Ingest a normalized security log event |
+| GET | `/logs` | List/filter logs |
+| GET | `/logs/{id}` | Retrieve a single log |
+| PATCH | `/logs/{id}` | Update a log |
+| DELETE | `/logs/{id}` | Delete a log |
+| POST | `/predict` | Run ML anomaly scoring on a log event |
+
+Interactive docs (Swagger): `http://localhost:8000/docs`
+
+## Getting Started
+
+```bash
+git clone https://github.com/Shourya2812/HAI-SOC.git
+cd HAI-SOC
+
+# Backend
+python -m venv backend/.venv
+source backend/.venv/Scripts/activate   # or backend/.venv/bin/activate on macOS/Linux
+pip install -r backend/requirements.txt
+uvicorn backend.app.main:app --reload
+
+# Generate the synthetic dataset
+python -m datasets.generators.attack_injector
+
+# Train and benchmark all ML models
+python -m ml.training.compare_models
+```
+
+Full architecture, tech stack rationale, and decision log: [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)
 
 ## Roadmap
 
-- [ ] **Phase 1** — Architecture & planning
-- [ ] **Phase 2** — Healthcare security dataset
-- [ ] **Phase 3** — Data engineering pipeline
-- [ ] **Phase 4** — ML anomaly detection
-- [ ] **Phase 5** — RAG knowledge base
-- [ ] **Phase 6** — Generative AI SOC copilot
-- [ ] **Phase 7** — Backend APIs
-- [ ] **Phase 8** — Frontend dashboard
-- [ ] **Phase 9** — Authentication & RBAC
-- [ ] **Phase 10** — Dockerization
-- [ ] **Phase 11** — Kubernetes deployment
-- [ ] **Phase 12** — AWS deployment
-- [ ] **Phase 13** — Monitoring
-- [ ] **Phase 14** — CI/CD
-- [ ] **Phase 15** — Documentation & research write-up
+- [x] Backend API, MongoDB, CRUD
+- [x] Auth, RBAC, audit logging
+- [x] Synthetic dataset + attack injector
+- [x] ML anomaly detection (5-model benchmark)
+- [x] Data leakage investigation
+- [ ] Correlated multi-stage attack sequences
+- [ ] RAG knowledge layer (HIPAA/NIST/MITRE ATT&CK)
+- [ ] GenAI incident copilot (LangGraph)
+- [ ] React dashboard
+- [ ] Kafka streaming
+- [ ] Kubernetes + AWS deployment
+- [ ] Monitoring (Prometheus/Grafana)
+- [ ] CI/CD
 
-## Getting started
+## Author
 
-> Local dev setup will be filled in once Phase 10 (Dockerization) lands — target is a single `docker-compose up` bringing up the backend, frontend, MongoDB, Redis, Kafka, and Qdrant.
-
-## Data & compliance note
-
-This project uses simulated or public security-log datasets only — no real PHI is collected, stored, or processed at any stage.
-
-
+**Shourya Tiwari**
+Computer Science Engineering (Cybersecurity), Manipal Institute of Technology

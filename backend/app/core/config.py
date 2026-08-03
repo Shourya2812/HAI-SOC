@@ -18,7 +18,7 @@ class Settings(BaseSettings):
     # MongoDB
     # ==========================================================
     MONGO_URI: str = "mongodb://localhost:27017/"
-    MONGO_DB_NAME: str = "HAI-SOC"
+    MONGO_DB_NAME: str = "hai_soc"
 
     # ==========================================================
     # Authentication

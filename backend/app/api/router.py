@@ -10,6 +10,10 @@ from backend.app.api.routes.health import router as health_router
 from backend.app.api.routes.logs import router as logs_router
 from backend.app.api.routes.incidents import router as incidents_router
 from backend.app.api.routes import auth
+from backend.app.api.routes.dashboard import (
+    router as dashboard_router,
+)
+
 
 api_router = APIRouter()
 
@@ -17,3 +21,4 @@ api_router.include_router(health_router)
 api_router.include_router(logs_router)
 api_router.include_router(incidents_router)
 api_router.include_router(auth.router)
+api_router.include_router(dashboard_router)

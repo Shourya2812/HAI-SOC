@@ -1,4 +1,5 @@
 import React from 'react';
+
 import {
   ResponsiveContainer,
   PieChart,
@@ -7,10 +8,10 @@ import {
   Tooltip,
   Legend,
 } from 'recharts';
-import { ModelUsageMetric } from '../../types/index';
+import { ModelDistribution } from '../../types/index';
 
 interface ModelUsageChartProps {
-  data: ModelUsageMetric[];
+  data: ModelDistribution[];
 }
 
 export const ModelUsageChart: React.FC<ModelUsageChartProps> = ({ data }) => {
@@ -26,8 +27,8 @@ export const ModelUsageChart: React.FC<ModelUsageChartProps> = ({ data }) => {
           innerRadius={60}
           outerRadius={85}
           paddingAngle={5}
-          dataKey="usagePercentage"
-          nameKey="modelName"
+          dataKey="count"
+          nameKey="model"
         >
           {data.map((_, index) => (
             <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} stroke="#0F172A" strokeWidth={2} />
@@ -42,7 +43,7 @@ export const ModelUsageChart: React.FC<ModelUsageChartProps> = ({ data }) => {
             fontSize: '12px',
           }}
           formatter={(value: any, name: any, item: any) => [
-            `${value}% usage (${item.payload.inferencesToday?.toLocaleString()} inferences)`,
+            `${value?.toLocaleString() || 0} inferences (${item.payload?.accuracy || 0}% accuracy)`,
             name,
           ]}
         />

@@ -45,7 +45,7 @@ export const SecurityLogsTable: React.FC<SecurityLogsTableProps> = ({ logs, onSe
       header: 'User',
       sortable: true,
       render: (row) => (
-        <span className="font-mono text-slate-300">{row.user}</span>
+        <span className="font-mono text-slate-300">{row.user || 'N/A'}</span>
       ),
     },
     {
@@ -53,7 +53,7 @@ export const SecurityLogsTable: React.FC<SecurityLogsTableProps> = ({ logs, onSe
       header: 'Department',
       sortable: true,
       render: (row) => (
-        <span className="text-slate-400">{row.department}</span>
+        <span className="text-slate-400">{row.department || 'N/A'}</span>
       ),
     },
     {
@@ -62,7 +62,7 @@ export const SecurityLogsTable: React.FC<SecurityLogsTableProps> = ({ logs, onSe
       sortable: true,
       render: (row) => (
         <span className="font-mono text-xs px-2 py-0.5 rounded bg-slate-950 border border-slate-800 text-slate-200">
-          {row.action}
+          {row.action || (row as any).message || 'EVENT'}
         </span>
       ),
     },
@@ -73,10 +73,10 @@ export const SecurityLogsTable: React.FC<SecurityLogsTableProps> = ({ logs, onSe
       render: (row) => (
         <span
           className={`inline-flex items-center px-2 py-0.5 rounded text-[10px] font-semibold border font-mono ${getOutcomeBadgeColor(
-            row.outcome
+            row.outcome || 'SUCCESS'
           )}`}
         >
-          {row.outcome}
+          {row.outcome || 'SUCCESS'}
         </span>
       ),
     },

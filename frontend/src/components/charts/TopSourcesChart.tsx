@@ -9,10 +9,10 @@ import {
   CartesianGrid,
   Cell,
 } from 'recharts';
-import { LogSourceMetric } from '../../types/index';
+import { SourceDistribution } from '../../types/index';
 
 interface TopSourcesChartProps {
-  data: LogSourceMetric[];
+  data: SourceDistribution[];
 }
 
 export const TopSourcesChart: React.FC<TopSourcesChartProps> = ({ data }) => {

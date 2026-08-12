@@ -9,10 +9,10 @@ import {
   CartesianGrid,
   Cell,
 } from 'recharts';
-import { DepartmentMetric } from '../../types/index';
+import { DepartmentDistribution } from '../../types/index';
 
 interface DepartmentRiskChartProps {
-  data: DepartmentMetric[];
+  data: DepartmentDistribution[];
 }
 
 export const DepartmentRiskChart: React.FC<DepartmentRiskChartProps> = ({ data }) => {
@@ -28,7 +28,7 @@ export const DepartmentRiskChart: React.FC<DepartmentRiskChartProps> = ({ data }
           angle={-15}
           textAnchor="end"
         />
-        <YAxis stroke="#64748B" fontSize={11} tickLine={false} domain={[0, 100]} />
+        <YAxis stroke="#64748B" fontSize={11} tickLine={false} />
         <Tooltip
           contentStyle={{
             backgroundColor: '#0F172A',
@@ -37,21 +37,15 @@ export const DepartmentRiskChart: React.FC<DepartmentRiskChartProps> = ({ data }
             color: '#F8FAFC',
             fontSize: '12px',
           }}
-          formatter={(value: any, name: any) => [
-            `${value} / 100`,
-            'Department Risk Index',
+          formatter={(value: any) => [
+            `${value} logs`,
+            'Log Count',
           ]}
         />
-        <Bar dataKey="riskScore" radius={[4, 4, 0, 0]}>
-          {data.map((entry, index) => {
-            const color =
-              entry.riskScore > 80
-                ? '#EF4444'
-                : entry.riskScore > 60
-                ? '#F59E0B'
-                : '#10B981';
-            return <Cell key={`cell-${index}`} fill={color} />;
-          })}
+        <Bar dataKey="count" radius={[4, 4, 0, 0]}>
+          {data.map((entry, index) => (
+            <Cell key={`cell-${index}`} fill={entry.color || '#10B981'} />
+          ))}
         </Bar>
       </BarChart>
     </ResponsiveContainer>

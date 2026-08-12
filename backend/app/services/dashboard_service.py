@@ -236,7 +236,7 @@ class DashboardService:
                     "_id": {
                         "$dateToString": {
                             "format": "%d %b",
-                            "date": "$timestamp",
+                            "date": "$created_at",
                         }
                     },
                     "count": {"$sum": 1},
@@ -314,8 +314,8 @@ class DashboardService:
             RecentIncidentItem(
                 id=str(doc["_id"]),
                 title=doc.get("title", "Untitled Incident"),
-                severity=doc.get("severity", "LOW"),
-                status=doc.get("status", "OPEN"),
+                severity=str(doc.get("risk_level", doc.get("severity", "LOW"))),
+                status=str(doc.get("status", "OPEN")),
             )
             for doc in incidents
         ]

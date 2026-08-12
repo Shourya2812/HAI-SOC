@@ -90,36 +90,36 @@ export const DashboardPage: React.FC = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <MetricCard
           title="Total Ingested Logs"
-          value={overview.totalLogs}
-          trendPct={overview.logsTrendPct}
+          value={overview.total_logs}
+          trendPct={overview.logs_trend_pct}
           icon={FileText}
           subtitle="All EHR & IoMT events"
           glowColor="cyan"
         />
         <MetricCard
           title="Today's ML Anomalies"
-          value={overview.todaysAnomalies}
-          trendPct={overview.anomaliesTrendPct}
+          value={overview.todays_anomalies}
+          trendPct={overview.anomalies_trend_pct}
           icon={BrainCircuit}
           subtitle="Isolation Forest & Autoencoder"
           glowColor="purple"
         />
         <MetricCard
           title="Open Security Incidents"
-          value={overview.openIncidents}
-          trendPct={overview.incidentsTrendPct}
+          value={overview.open_incidents}
+          trendPct={overview.incidents_trend_pct}
           icon={AlertTriangle}
           subtitle="Active SOC investigation"
           glowColor="amber"
         />
         <MetricCard
           title="Critical Incidents"
-          value={overview.criticalIncidents}
-          trendPct={overview.criticalTrendPct}
+          value={overview.critical_incidents}
+          trendPct={overview.critical_trend_pct}
           icon={Flame}
           subtitle="Immediate containment required"
           glowColor="red"
-          isCritical={overview.criticalIncidents > 0}
+          isCritical={overview.critical_incidents > 0}
         />
       </div>
 

@@ -1,18 +1,19 @@
 import React from 'react';
+
 import {
   ResponsiveContainer,
   AreaChart,
   Area,
   XAxis,
   YAxis,
-  Tooltip,
   CartesianGrid,
+  Tooltip,
   Legend,
 } from 'recharts';
-import { AnomalyTrendPoint } from '../../types/index';
+import { DailyTrend } from '../../types/index';
 
 interface AnomalyTrendChartProps {
-  data: AnomalyTrendPoint[];
+  data: DailyTrend[];
 }
 
 export const AnomalyTrendChart: React.FC<AnomalyTrendChartProps> = ({ data }) => {
@@ -24,10 +25,6 @@ export const AnomalyTrendChart: React.FC<AnomalyTrendChartProps> = ({ data }) =>
             <stop offset="5%" stopColor="#06B6D4" stopOpacity={0.4} />
             <stop offset="95%" stopColor="#06B6D4" stopOpacity={0} />
           </linearGradient>
-          <linearGradient id="colorCritical" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="5%" stopColor="#EF4444" stopOpacity={0.6} />
-            <stop offset="95%" stopColor="#EF4444" stopOpacity={0} />
-          </linearGradient>
           <linearGradient id="colorBaseline" x1="0" y1="0" x2="0" y2="1">
             <stop offset="5%" stopColor="#64748B" stopOpacity={0.2} />
             <stop offset="95%" stopColor="#64748B" stopOpacity={0} />
@@ -35,7 +32,7 @@ export const AnomalyTrendChart: React.FC<AnomalyTrendChartProps> = ({ data }) =>
         </defs>
 
         <CartesianGrid strokeDasharray="3 3" stroke="#1E293B" vertical={false} />
-        <XAxis dataKey="time" stroke="#64748B" fontSize={11} tickLine={false} />
+        <XAxis dataKey="hour" stroke="#64748B" fontSize={11} tickLine={false} />
         <YAxis stroke="#64748B" fontSize={11} tickLine={false} />
 
         <Tooltip
@@ -73,15 +70,6 @@ export const AnomalyTrendChart: React.FC<AnomalyTrendChartProps> = ({ data }) =>
           strokeWidth={2}
           fillOpacity={1}
           fill="url(#colorAnomalies)"
-        />
-        <Area
-          type="monotone"
-          dataKey="criticalAnomalies"
-          name="Critical Anomalies"
-          stroke="#EF4444"
-          strokeWidth={2}
-          fillOpacity={1}
-          fill="url(#colorCritical)"
         />
       </AreaChart>
     </ResponsiveContainer>

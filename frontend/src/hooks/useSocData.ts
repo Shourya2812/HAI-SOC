@@ -133,6 +133,24 @@ export function useLogs() {
   };
 }
 
+export const useSecurityLogs = useLogs;
+
+export function useIntervalClock() {
+  const [time, setTime] = useState<string>("");
+
+  useEffect(() => {
+    const update = () => {
+      const now = new Date();
+      setTime(now.toISOString().replace("T", " ").substring(0, 19) + " UTC");
+    };
+    update();
+    const interval = setInterval(update, 1000);
+    return () => clearInterval(interval);
+  }, []);
+
+  return time;
+}
+
 /* =======================================================
    Incidents
 ======================================================= */

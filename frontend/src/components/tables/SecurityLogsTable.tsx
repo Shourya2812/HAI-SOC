@@ -41,11 +41,11 @@ export const SecurityLogsTable: React.FC<SecurityLogsTableProps> = ({ logs, onSe
       ),
     },
     {
-      key: 'user',
+      key: 'user_id',
       header: 'User',
       sortable: true,
       render: (row) => (
-        <span className="font-mono text-slate-300">{row.user || 'N/A'}</span>
+        <span className="font-mono text-slate-300">{row.user_id || row.user || 'N/A'}</span>
       ),
     },
     {
@@ -62,7 +62,7 @@ export const SecurityLogsTable: React.FC<SecurityLogsTableProps> = ({ logs, onSe
       sortable: true,
       render: (row) => (
         <span className="font-mono text-xs px-2 py-0.5 rounded bg-slate-950 border border-slate-800 text-slate-200">
-          {row.action || (row as any).message || 'EVENT'}
+          {row.action || row.message || 'EVENT'}
         </span>
       ),
     },
@@ -134,7 +134,7 @@ export const SecurityLogsTable: React.FC<SecurityLogsTableProps> = ({ logs, onSe
         columns={columns}
         data={filteredLogs}
         searchPlaceholder="Filter logs by user, action, IP, resource..."
-        searchFilterKey={(row) => `${row.user} ${row.source} ${row.action} ${row.details || ''} ${row.department}`}
+        searchFilterKey={(row) => `${row.user_id || row.user || ''} ${row.source} ${row.action} ${row.message || row.details || ''} ${row.department || ''}`}
         onRowClick={onSelectLog}
         pageSize={10}
       />

@@ -72,11 +72,11 @@ export const LogsPage: React.FC = () => {
               </div>
               <div>
                 <span className="text-slate-500 uppercase">User / Principal:</span>
-                <p className="text-cyan-400 font-bold">{selectedLog.user}</p>
+                <p className="text-cyan-400 font-bold">{selectedLog.user_id || selectedLog.user || 'N/A'}</p>
               </div>
               <div>
                 <span className="text-slate-500 uppercase">Department:</span>
-                <p className="text-slate-300">{selectedLog.department}</p>
+                <p className="text-slate-300">{selectedLog.department || 'N/A'}</p>
               </div>
               <div>
                 <span className="text-slate-500 uppercase">Action Trigger:</span>
@@ -91,19 +91,19 @@ export const LogsPage: React.FC = () => {
                 <p className="text-red-400 font-bold">{selectedLog.severity}</p>
               </div>
               <div>
-                <span className="text-slate-500 uppercase">Origin IP:</span>
-                <p className="text-purple-400">{selectedLog.ipAddress || '10.240.12.88'}</p>
+                <span className="text-slate-500 uppercase">Destination / IP:</span>
+                <p className="text-purple-400">{selectedLog.destination || (selectedLog as any).ipAddress || '10.240.12.88'}</p>
               </div>
               <div>
-                <span className="text-slate-500 uppercase">Resource GUID:</span>
-                <p className="text-slate-400">{selectedLog.resourceId || 'PHI-REF-01'}</p>
+                <span className="text-slate-500 uppercase">Device / Resource:</span>
+                <p className="text-slate-400">{selectedLog.device || (selectedLog as any).resourceId || 'PHI-REF-01'}</p>
               </div>
             </div>
 
             <div>
               <h4 className="font-bold text-slate-200 mb-2 uppercase">Diagnostic Summary</h4>
               <div className="p-3 bg-slate-950 rounded-xl border border-slate-800 text-slate-300">
-                {selectedLog.details || 'Standard transactional audit log entry.'}
+                {selectedLog.message || selectedLog.details || 'Standard transactional audit log entry.'}
               </div>
             </div>
 

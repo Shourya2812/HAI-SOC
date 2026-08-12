@@ -1,23 +1,19 @@
 export interface Log {
   id: string;
-
   timestamp: string;
-
   source: string;
-
-  user: string;
-
-  department: string;
-
+  destination?: string;
+  user_id?: string;
+  user?: string;
+  role?: string;
+  device?: string;
+  department?: string;
   action: string;
-
-  outcome: string;
-
   severity: string;
-
-  ip_address: string;
-
-  resource: string;
-
-  details: string;
+  protocol?: string;
+  port?: number;
+  message: string;
+  details?: string;
+  outcome: string;
+  extra?: Record<string, any>;
 }

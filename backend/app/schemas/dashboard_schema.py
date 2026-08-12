@@ -30,11 +30,11 @@ class DashboardOverviewResponse(BaseModel):
 # Risk Distribution
 # =====================================================
 
-class RiskDistributionResponse(BaseModel):
-    low: int
-    medium: int
-    high: int
-    critical: int
+class RiskDistributionItem(BaseModel):
+    category: str
+    count: int
+    percentage: float
+    color: str
 
 
 # =====================================================
@@ -44,6 +44,7 @@ class RiskDistributionResponse(BaseModel):
 class SourceDistributionItem(BaseModel):
     source: str
     count: int
+    color: str
 
 
 # =====================================================
@@ -53,6 +54,7 @@ class SourceDistributionItem(BaseModel):
 class DepartmentDistributionItem(BaseModel):
     department: str
     count: int
+    color: str
 
 
 # =====================================================
@@ -60,17 +62,18 @@ class DepartmentDistributionItem(BaseModel):
 # =====================================================
 
 class ModelDistributionItem(BaseModel):
-    detector: str
+    model: str
     count: int
-
+    accuracy: float
 
 # =====================================================
 # Daily Trend
 # =====================================================
 
 class DailyTrendItem(BaseModel):
-    date: str
-    count: int
+    hour: str
+    anomalies: int
+    baseline: int
 
 
 # =====================================================

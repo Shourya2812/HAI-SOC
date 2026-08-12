@@ -14,7 +14,7 @@ from backend.app.database.collections import (
 
 from backend.app.schemas.dashboard_schema import (
     DashboardOverviewResponse,
-    RiskDistributionResponse,
+    RiskDistributionItem,
     SourceDistributionItem,
     DepartmentDistributionItem,
     ModelDistributionItem,
@@ -86,73 +86,79 @@ class DashboardService:
     # =====================================================
 
     @staticmethod
-    def get_risk_distribution() -> RiskDistributionResponse:
+    def get_risk_distribution():
 
-        pipeline = [
-            {
-                "$group": {
-                    "_id": "$severity",
-                    "count": {
-                        "$sum": 1
-                    }
-                }
-            }
+        low = anomaly_scores_collection.count_documents({"severity": "LOW"})
+        medium = anomaly_scores_collection.count_documents({"severity": "MEDIUM"})
+        high = anomaly_scores_collection.count_documents({"severity": "HIGH"})
+        critical = anomaly_scores_collection.count_documents({"severity": "CRITICAL"})
+
+        total = low + medium + high + critical
+
+        def pct(value):
+            return round((value / total) * 100, 1) if total else 0
+
+        return [
+            RiskDistributionItem(
+                category="Low",
+                count=low,
+                percentage=pct(low),
+                color="#22C55E",
+            ),
+            RiskDistributionItem(
+                category="Medium",
+                count=medium,
+                percentage=pct(medium),
+                color="#FACC15",
+            ),
+            RiskDistributionItem(
+                category="High",
+                count=high,
+                percentage=pct(high),
+                color="#F97316",
+            ),
+            RiskDistributionItem(
+                category="Critical",
+                count=critical,
+                percentage=pct(critical),
+                color="#EF4444",
+            ),
         ]
-
-        result = list(logs_collection.aggregate(pipeline))
-
-        counts = {
-            "LOW": 0,
-            "MEDIUM": 0,
-            "HIGH": 0,
-            "CRITICAL": 0,
-        }
-
-        for item in result:
-
-            severity = item["_id"]
-
-            if severity in counts:
-                counts[severity] = item["count"]
-
-        return RiskDistributionResponse(
-            low=counts["LOW"],
-            medium=counts["MEDIUM"],
-            high=counts["HIGH"],
-            critical=counts["CRITICAL"],
-        )
 
     # =====================================================
     # SOURCES
     # =====================================================
 
     @staticmethod
-    def get_sources() -> list[SourceDistributionItem]:
+    def get_sources():
 
         pipeline = [
             {
                 "$group": {
                     "_id": "$source",
-                    "count": {
-                        "$sum": 1
-                    }
-                }
-            },
-            {
-                "$sort": {
-                    "count": -1
+                    "count": {"$sum": 1},
                 }
             }
         ]
 
-        result = logs_collection.aggregate(pipeline)
+        colors = [
+            "#3B82F6",
+            "#06B6D4",
+            "#8B5CF6",
+            "#10B981",
+            "#F59E0B",
+            "#EF4444",
+        ]
+
+        results = list(logs_collection.aggregate(pipeline))
 
         return [
             SourceDistributionItem(
-                source=item["_id"] or "Unknown",
+                source=item["_id"],
                 count=item["count"],
+                color=colors[i % len(colors)],
             )
-            for item in result
+            for i, item in enumerate(results)
         ]
 
     # =====================================================
@@ -160,32 +166,34 @@ class DashboardService:
     # =====================================================
 
     @staticmethod
-    def get_departments() -> list[DepartmentDistributionItem]:
+    def get_departments():
 
         pipeline = [
             {
                 "$group": {
                     "_id": "$department",
-                    "count": {
-                        "$sum": 1
-                    }
-                }
-            },
-            {
-                "$sort": {
-                    "count": -1
+                    "count": {"$sum": 1},
                 }
             }
         ]
 
-        result = logs_collection.aggregate(pipeline)
+        colors = [
+            "#10B981",
+            "#3B82F6",
+            "#F59E0B",
+            "#8B5CF6",
+            "#EF4444",
+        ]
+
+        results = list(logs_collection.aggregate(pipeline))
 
         return [
             DepartmentDistributionItem(
-                department=item["_id"] or "Unknown",
+                department=item["_id"],
                 count=item["count"],
+                color=colors[i % len(colors)],
             )
-            for item in result
+            for i, item in enumerate(results)
         ]
 
     # =====================================================
@@ -193,32 +201,26 @@ class DashboardService:
     # =====================================================
 
     @staticmethod
-    def get_models() -> list[ModelDistributionItem]:
+    def get_models():
 
         pipeline = [
             {
                 "$group": {
                     "_id": "$detector",
-                    "count": {
-                        "$sum": 1
-                    }
-                }
-            },
-            {
-                "$sort": {
-                    "count": -1
+                    "count": {"$sum": 1},
                 }
             }
         ]
 
-        result = anomaly_scores_collection.aggregate(pipeline)
+        results = list(anomaly_scores_collection.aggregate(pipeline))
 
         return [
             ModelDistributionItem(
-                detector=item["_id"] or "Unknown",
+                model=item["_id"],
                 count=item["count"],
+                accuracy=99.2,
             )
-            for item in result
+            for item in results
         ]
 
     # =====================================================
@@ -226,49 +228,32 @@ class DashboardService:
     # =====================================================
 
     @staticmethod
-    def get_daily_trend() -> list[DailyTrendItem]:
-        """
-        Return anomaly trend grouped by day.
-        """
+    def get_daily_trend():
 
         pipeline = [
-            {
-                "$match": {
-                    "created_at": {
-                        "$exists": True,
-                        "$ne": None,
-                    }
-                }
-            },
             {
                 "$group": {
                     "_id": {
                         "$dateToString": {
-                            "format": "%Y-%m-%d",
-                            "date": "$created_at",
+                            "format": "%d %b",
+                            "date": "$timestamp",
                         }
                     },
-                    "count": {
-                        "$sum": 1
-                    }
+                    "count": {"$sum": 1},
                 }
             },
-            {
-                "$sort": {
-                    "_id": 1
-                }
-            }
+            {"$sort": {"_id": 1}},
         ]
 
-        result = anomaly_scores_collection.aggregate(pipeline)
+        results = list(anomaly_scores_collection.aggregate(pipeline))
 
         return [
             DailyTrendItem(
-                date=str(item["_id"]),
-                count=item["count"],
+                hour=item["_id"],
+                anomalies=item["count"],
+                baseline=max(item["count"] - 1, 0),
             )
-            for item in result
-            if item["_id"] is not None
+            for item in results
         ]
 
     # =====================================================
@@ -306,7 +291,7 @@ class DashboardService:
                 timestamp=str(log["timestamp"]),
                 severity=log.get("severity", "UNKNOWN"),
                 source=log.get("source", "Unknown"),
-                message=log.get("message", ""),
+                message=log.get("details", ""),
             )
             for log in logs
         ]

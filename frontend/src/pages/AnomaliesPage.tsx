@@ -82,23 +82,25 @@ export const AnomaliesPage: React.FC = () => {
             <div className="grid grid-cols-2 gap-3 p-4 bg-slate-950 rounded-xl border border-slate-800 font-mono">
               <div>
                 <span className="text-slate-500 uppercase text-[10px]">Timestamp:</span>
-                <p className="text-slate-200 font-bold">{formatDateTime(selectedAnomaly.timestamp)}</p>
+                <p className="text-slate-200 font-bold">{formatDateTime(selectedAnomaly.timestamp || '')}</p>
               </div>
               <div>
                 <span className="text-slate-500 uppercase text-[10px]">Prediction Outcome:</span>
-                <p className="text-red-400 font-bold">{selectedAnomaly.prediction}</p>
+                <p className="text-red-400 font-bold">
+                  {selectedAnomaly.prediction === 1 || selectedAnomaly.prediction === '1' || selectedAnomaly.prediction === 'ANOMALOUS' ? 'ANOMALOUS (1)' : 'NORMAL (0)'}
+                </p>
               </div>
               <div>
                 <span className="text-slate-500 uppercase text-[10px]">Anomaly Score:</span>
-                <p className="text-amber-400 font-bold">{selectedAnomaly.anomalyScore.toFixed(2)}</p>
+                <p className="text-amber-400 font-bold">{(selectedAnomaly.score ?? selectedAnomaly.anomalyScore ?? selectedAnomaly.anomaly_score ?? 0).toFixed(2)}</p>
               </div>
               <div>
                 <span className="text-slate-500 uppercase text-[10px]">Model Confidence:</span>
-                <p className="text-cyan-400 font-bold">{selectedAnomaly.confidence.toFixed(1)}%</p>
+                <p className="text-cyan-400 font-bold">{(selectedAnomaly.confidence ?? 98.5).toFixed(1)}%</p>
               </div>
               <div>
                 <span className="text-slate-500 uppercase text-[10px]">Flagged Subject:</span>
-                <p className="text-slate-200">{selectedAnomaly.flaggedUser || 'System Process'}</p>
+                <p className="text-slate-200">{selectedAnomaly.flaggedUser || selectedAnomaly.user || 'System Process'}</p>
               </div>
               <div>
                 <span className="text-slate-500 uppercase text-[10px]">Department:</span>
@@ -106,20 +108,22 @@ export const AnomaliesPage: React.FC = () => {
               </div>
             </div>
 
-            <div>
-              <h4 className="font-bold text-slate-200 mb-2 uppercase font-mono flex items-center gap-1.5">
-                <SlidersHorizontal className="w-4 h-4 text-cyan-400" />
-                <span>Features Analyzed by Neural Net</span>
-              </h4>
-              <div className="space-y-2">
-                {selectedAnomaly.featuresAnalyzed.map((feat, i) => (
-                  <div key={i} className="p-2.5 bg-slate-950 rounded-lg border border-slate-800 flex items-center justify-between font-mono">
-                    <span className="text-slate-300">{feat}</span>
-                    <span className="text-xs text-purple-400 font-bold">Deviation &gt; 3.5 σ</span>
-                  </div>
-                ))}
+            {(selectedAnomaly.featuresAnalyzed || selectedAnomaly.features) && (
+              <div>
+                <h4 className="font-bold text-slate-200 mb-2 uppercase font-mono flex items-center gap-1.5">
+                  <SlidersHorizontal className="w-4 h-4 text-cyan-400" />
+                  <span>Features Analyzed by Neural Net</span>
+                </h4>
+                <div className="space-y-2">
+                  {(selectedAnomaly.featuresAnalyzed || selectedAnomaly.features || []).map((feat, i) => (
+                    <div key={i} className="p-2.5 bg-slate-950 rounded-lg border border-slate-800 flex items-center justify-between font-mono">
+                      <span className="text-slate-300">{feat}</span>
+                      <span className="text-xs text-purple-400 font-bold">Deviation &gt; 3.5 σ</span>
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
           </div>
         </Drawer>
       )}

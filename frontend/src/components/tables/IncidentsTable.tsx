@@ -31,7 +31,7 @@ export const IncidentsTable: React.FC<IncidentsTableProps> = ({
       sortable: true,
       render: (row) => (
         <span className="font-mono font-bold text-cyan-400 hover:underline">
-          {row.incidentId || row.id}
+          {row.id || row.incidentId}
         </span>
       ),
     },
@@ -39,7 +39,7 @@ export const IncidentsTable: React.FC<IncidentsTableProps> = ({
       key: 'severity',
       header: 'Severity',
       sortable: true,
-      render: (row) => <SeverityBadge severity={(row.severity || 'LOW') as SeverityLevel} />,
+      render: (row) => <SeverityBadge severity={(row.severity || row.risk_level || 'LOW') as SeverityLevel} />,
     },
     {
       key: 'riskLevel',
@@ -48,10 +48,10 @@ export const IncidentsTable: React.FC<IncidentsTableProps> = ({
       render: (row) => (
         <span
           className={`px-2 py-0.5 rounded text-[10px] font-semibold border uppercase font-mono ${getRiskLevelColor(
-            row.riskLevel || row.severity || 'LOW'
+            (row.risk_level || row.riskLevel || row.severity || 'LOW') as any
           )}`}
         >
-          {row.riskLevel || row.severity || 'LOW'}
+          {row.risk_level || row.riskLevel || row.severity || 'LOW'}
         </span>
       ),
     },
@@ -67,7 +67,7 @@ export const IncidentsTable: React.FC<IncidentsTableProps> = ({
       sortable: true,
       render: (row) => (
         <span className="font-mono text-xs text-slate-400">
-          {formatDateTime(row.createdAt || (row as any).created_at)}
+          {formatDateTime(row.created_at || row.createdAt || '')}
         </span>
       ),
     },
@@ -75,38 +75,41 @@ export const IncidentsTable: React.FC<IncidentsTableProps> = ({
       key: 'predictionScore',
       header: 'Prediction Score',
       sortable: true,
-      render: (row) => (
-        <div className="flex items-center gap-2 font-mono">
-          {row.predictionScore != null ? (
-            <>
-              <div className="w-16 h-1.5 rounded-full bg-slate-800 overflow-hidden">
-                <div
-                  className={`h-full ${
-                    row.predictionScore > 90
-                      ? 'bg-red-500'
-                      : row.predictionScore > 75
-                      ? 'bg-amber-500'
-                      : 'bg-cyan-500'
-                  }`}
-                  style={{ width: `${row.predictionScore}%` }}
-                ></div>
-              </div>
-              <span className="text-xs font-bold text-slate-200">
-                {row.predictionScore.toFixed(1)}%
-              </span>
-            </>
-          ) : (
-            <span className="text-xs text-slate-500">N/A</span>
-          )}
-        </div>
-      ),
+      render: (row) => {
+        const scoreVal = row.anomaly_score != null ? row.anomaly_score * 100 : row.predictionScore;
+        return (
+          <div className="flex items-center gap-2 font-mono">
+            {scoreVal != null ? (
+              <>
+                <div className="w-16 h-1.5 rounded-full bg-slate-800 overflow-hidden">
+                  <div
+                    className={`h-full ${
+                      scoreVal > 90
+                        ? 'bg-red-500'
+                        : scoreVal > 75
+                        ? 'bg-amber-500'
+                        : 'bg-cyan-500'
+                    }`}
+                    style={{ width: `${scoreVal}%` }}
+                  ></div>
+                </div>
+                <span className="text-xs font-bold text-slate-200">
+                  {scoreVal.toFixed(1)}%
+                </span>
+              </>
+            ) : (
+              <span className="text-xs text-slate-500">N/A</span>
+            )}
+          </div>
+        );
+      },
     },
     {
       key: 'recommendedAction',
-      header: 'Recommended Action',
+      header: 'Description / Recommended Action',
       render: (row) => (
-        <p className="text-xs text-slate-300 max-w-xs truncate" title={row.recommendedAction || row.title}>
-          {row.recommendedAction || row.title}
+        <p className="text-xs text-slate-300 max-w-xs truncate" title={row.description || row.recommendedAction || row.title}>
+          {row.description || row.recommendedAction || row.title}
         </p>
       ),
     },

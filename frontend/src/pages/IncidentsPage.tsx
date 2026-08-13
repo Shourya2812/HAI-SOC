@@ -66,7 +66,7 @@ export const IncidentsPage: React.FC = () => {
         <Drawer
           isOpen={!!selectedIncident}
           onClose={() => setSelectedIncident(null)}
-          title={`Incident Investigation: ${selectedIncident.incidentId}`}
+          title={`Incident Investigation: ${selectedIncident.id || selectedIncident.incidentId}`}
           subtitle={selectedIncident.title}
         >
           <div className="space-y-6 text-xs font-sans">
@@ -74,11 +74,11 @@ export const IncidentsPage: React.FC = () => {
             <div className="grid grid-cols-2 gap-3 p-4 bg-slate-950 rounded-xl border border-slate-800 font-mono">
               <div>
                 <span className="text-slate-500 uppercase text-[10px]">Severity:</span>
-                <p className="text-red-400 font-bold">{selectedIncident.severity}</p>
+                <p className="text-red-400 font-bold">{selectedIncident.severity || selectedIncident.risk_level || 'LOW'}</p>
               </div>
               <div>
                 <span className="text-slate-500 uppercase text-[10px]">Risk Level:</span>
-                <p className="text-amber-400 font-bold">{selectedIncident.riskLevel}</p>
+                <p className="text-amber-400 font-bold">{selectedIncident.risk_level || selectedIncident.riskLevel || 'LOW'}</p>
               </div>
               <div>
                 <span className="text-slate-500 uppercase text-[10px]">Current Status:</span>
@@ -86,15 +86,15 @@ export const IncidentsPage: React.FC = () => {
               </div>
               <div>
                 <span className="text-slate-500 uppercase text-[10px]">Assigned Analyst:</span>
-                <p className="text-slate-200">{selectedIncident.assignedAnalyst || 'Unassigned'}</p>
+                <p className="text-slate-200">{selectedIncident.assigned_to || selectedIncident.assignedAnalyst || 'Unassigned'}</p>
               </div>
               <div>
                 <span className="text-slate-500 uppercase text-[10px]">Source System:</span>
-                <p className="text-slate-300">{selectedIncident.source}</p>
+                <p className="text-slate-300">{selectedIncident.detector || selectedIncident.source || 'HAI-SOC Engine'}</p>
               </div>
               <div>
                 <span className="text-slate-500 uppercase text-[10px]">Created At:</span>
-                <p className="text-slate-400">{formatDateTime(selectedIncident.createdAt)}</p>
+                <p className="text-slate-400">{formatDateTime(selectedIncident.created_at || selectedIncident.createdAt || '')}</p>
               </div>
             </div>
 
@@ -105,7 +105,7 @@ export const IncidentsPage: React.FC = () => {
                 {['OPEN', 'INVESTIGATING', 'CONTAINED', 'RESOLVED', 'CLOSED'].map((st) => (
                   <button
                     key={st}
-                    onClick={() => handleStatusChange(selectedIncident.incidentId, st)}
+                    onClick={() => handleStatusChange(selectedIncident.id || selectedIncident.incidentId || '', st)}
                     className={`px-3 py-1.5 rounded-lg text-xs font-mono font-bold border transition-colors ${
                       selectedIncident.status === st
                         ? 'bg-cyan-950 text-cyan-300 border-cyan-500 glow-cyan'
@@ -122,10 +122,10 @@ export const IncidentsPage: React.FC = () => {
             <div className="p-4 bg-cyan-950/40 border border-cyan-800/60 rounded-xl space-y-2">
               <div className="flex items-center gap-2 font-mono text-cyan-400 font-bold uppercase">
                 <ShieldCheck className="w-4 h-4" />
-                <span>AI Recommended Containment Action</span>
+                <span>Description & AI Containment Action</span>
               </div>
               <p className="text-slate-200 font-mono text-xs">
-                {selectedIncident.recommendedAction}
+                {selectedIncident.description || selectedIncident.recommendedAction || 'No detailed description provided.'}
               </p>
             </div>
 

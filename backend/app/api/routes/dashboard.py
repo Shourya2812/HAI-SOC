@@ -8,7 +8,7 @@ from fastapi import APIRouter
 
 from backend.app.schemas.dashboard_schema import (
     DashboardOverviewResponse,
-    RiskDistributionResponse,
+    RiskDistributionItem,
     SourceDistributionItem,
     DepartmentDistributionItem,
     ModelDistributionItem,
@@ -45,7 +45,7 @@ def get_dashboard_overview():
 
 @router.get(
     "/risk-distribution",
-    response_model=RiskDistributionResponse,
+    response_model=list[RiskDistributionItem],
 )
 def get_risk_distribution():
 

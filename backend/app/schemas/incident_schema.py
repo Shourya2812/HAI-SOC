@@ -5,7 +5,7 @@ Pydantic schemas used by the Incident API.
 """
 
 from datetime import datetime
-from typing import Any, Optional
+from typing import Any, Optional, Union
 
 from pydantic import BaseModel, ConfigDict, Field
 
@@ -13,6 +13,23 @@ from backend.app.models.enums import (
     IncidentStatus,
     RiskLevel,
 )
+
+
+class IncidentReportSchema(BaseModel):
+    """
+    Structured AI investigation report schema.
+    """
+
+    raw_markdown: str = ""
+    generated_at: Optional[datetime] = None
+    mitre_techniques: list[str] = Field(default_factory=list)
+    nist_controls: list[str] = Field(default_factory=list)
+    hipaa_impact: Optional[str] = None
+    risk_assessment: Optional[str] = None
+    recommended_actions: list[str] = Field(default_factory=list)
+    status: str = "GENERATED"
+
+    model_config = ConfigDict(extra="allow")
 
 
 class CreateIncidentRequest(BaseModel):
@@ -40,7 +57,7 @@ class CreateIncidentRequest(BaseModel):
 
     mitre_technique_id: Optional[str] = None
 
-    report: dict[str, Any] = Field(default_factory=dict)
+    report: Union[IncidentReportSchema, dict[str, Any]] = Field(default_factory=dict)
 
     assigned_to: Optional[str] = None
 
@@ -58,7 +75,7 @@ class UpdateIncidentRequest(BaseModel):
 
     assigned_to: Optional[str] = None
 
-    report: Optional[dict[str, Any]] = None
+    report: Optional[Union[IncidentReportSchema, dict[str, Any]]] = None
 
     resolved_at: Optional[datetime] = None
 
@@ -90,7 +107,7 @@ class IncidentResponse(BaseModel):
 
     mitre_technique_id: Optional[str] = None
 
-    report: dict[str, Any] = Field(default_factory=dict)
+    report: Union[IncidentReportSchema, dict[str, Any]] = Field(default_factory=dict)
 
     assigned_to: Optional[str] = None
 

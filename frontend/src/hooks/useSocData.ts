@@ -128,6 +128,7 @@ export function useLogs() {
 
   return {
     logs,
+    setLogs,
     loading,
     refetch: fetchLogs,
   };
@@ -177,6 +178,7 @@ export function useIncidents() {
 
   return {
     incidents,
+    setIncidents,
     loading,
     refetch: fetchIncidents,
   };
@@ -209,6 +211,7 @@ export function useAnomalies() {
 
   return {
     anomalies,
+    setAnomalies,
     loading,
     refetch: fetchAnomalies,
   };

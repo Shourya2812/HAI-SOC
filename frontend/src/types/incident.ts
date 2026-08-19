@@ -1,3 +1,14 @@
+export interface IncidentReport {
+  raw_markdown?: string;
+  generated_at?: string;
+  mitre_techniques?: string[];
+  nist_controls?: string[];
+  hipaa_impact?: string | null;
+  risk_assessment?: string | null;
+  recommended_actions?: string[];
+  status?: string;
+}
+
 export interface Incident {
   id: string;
   title: string;
@@ -11,7 +22,7 @@ export interface Incident {
   status: string;
   hipaa_impact?: string;
   mitre_technique_id?: string;
-  report?: Record<string, any>;
+  report?: IncidentReport | Record<string, any>;
   assigned_to?: string;
   assignedAnalyst?: string;
   created_at: string;
